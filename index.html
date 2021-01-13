@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/index.css">
-    
+
     <!-- Сюда подключаем стили -->
 
     <title>Document</title>
@@ -16,42 +16,75 @@
     <!-- Здесь будет структура документа (HTML) -->
     <header class="header">
         <div class="header__top">
-            <div class="header__top-inner">
-                <nav class="menu header__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Store</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Testimonials</a></li>
-                    </ul>
-                </nav>
-                <div class="logo header__logo">
-                    <a class="logo__link" href="#"><img class="logo__img" src="#" alt="logo"></a>
-                </div>
-                <div class="personal">
-                    <ul class="personal__list">
-                        <li class="personal__item"><a class="personal__link" href="#"><img class="persona__img" src="#"
-                                    alt="#"></a></li>
-                        <li class="personal__item"><a class="personal__link" href="#"><img class="persona__img" src="#"
-                                    alt="#"></a></li>
-                        <li class="personal__item"><a class="personal__link" href="#"><img class="persona__img" src="#"
-                                    alt="#"></a></li>
-                    </ul>
-                </div>
-                <div class="social header__social">
-                    <ul class="social__list">
-                        <li class="social__item"><a class="social__link" href="#"><img class="social__img" src="#"
-                                    alt="#"></a></li>
-                        <li class="social__item"><a class="social__link" href="#"><img class="social__img" src="#"
-                                    alt="#"></a></li>
-                        <li class="social__item"><a class="social__link" href="#"><img class="social__img" src="#"
-                                    alt="#"></a></li>
-                    </ul>
-                </div>
-                <button class="btn header__btn--active">Shop now</button>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Shop</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Store</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Testimonials</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="#" alt="logo">
+                </a>
             </div>
+            <div class="personal header__personal">
+                <ul class="personal__list">
+                    <li class="personal__item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon-search" src="#" alt="#">
+                        </a>
+                    </li>
+                    <li class="personal__item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__icon-user" src="#" alt="#">
+                        </a>
+                    </li>
+                    <li class="personal__item">
+                        <a class="personal__link" href="#">
+                            <img class="personal__cart-icon" src="#" alt="#">
+                            <span class="personal__cart-count"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social header__social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="#" alt="#">
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="#" alt="#">
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__link" href="#">
+                            <img class="social__icon" src="#" alt="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button class="btn header__btn btn--bg-green">Shop now</button>
         </div>
     </header>
 
@@ -112,11 +145,13 @@
                 <li class="about__item"><a class="about__link" href="#">4g Plant Protein</a></li>
                 <li class="about__item"><a class="about__link" href="#">Good source of <span>Magnesium & Vitamin
                             B6</span></a></li>
-                <li class="about__item"><a class="about__link" href="#"><span>No Sugar</span> in our Savory Flavors</a>
+                <li class="about__item"><a class="about__link" href="#"><span>No Sugar</span> in our Savory
+                        Flavors</a>
                 </li>
                 <li class="about__item"><a class="about__link" href="#"><span>Non-GMO, Vegan & Grain-Free</span></a>
                 </li>
-                <li class="about__item"><a class="about__link" href="#"><span>Gluten-Free & Grain-Free</span></a></li>
+                <li class="about__item"><a class="about__link" href="#"><span>Gluten-Free & Grain-Free</span></a>
+                </li>
                 <li class="about__item"><a class="about__link" href="#"><span>Corn-Free & Soy-Free</span></a></li>
             </ul>
             <button class="block-btn about__block-btn">About Organic Smoothie<img src="#" alt="#"></button>
@@ -125,10 +160,10 @@
 
     <section class="products">
         <div class="products__item products__item--bg-brown">
-            <img class="img products__img" src="#" alt="#">
+            <img class="products__img" src="#" alt="#">
             <h3 class="block-title products__block-title">Dark Chocolate Smoothie</h3>
-            <span class="products__ml">100ml</span>
-            <button class="btn products__btn">Buy<img src="#" alt="#"></button>
+            <span class="products__">100ml</span>
+            <button class="btn products__btn">Buy<img class="products__btn-img" src="#" alt="#"></button>
         </div>
         <div class="products__item products__item--bg-green">
             <img class="img products__img" src="#" alt="#">
@@ -151,7 +186,7 @@
     </section>
 
     <section class="story">
-        <div class="story-text">
+        <div class="story__fruits&vegetables">
             <h2 class="block-title story__block-title">Our story</h2>
             <p class="text story__text">As products typically using raw fruits or vegetables,
                 smoothies include dietary fiber (e.g. pulp, skin, and seeds)
@@ -165,19 +200,19 @@
     <section class="testimonials">
         <div>
             <h2 class="block-title testimonials__block-title">Why clients LOVE us?</h2>
-            <blockquote class="testimonials-block">
-                <q class="testimonials-quote">Smoothie is great. I don't know what else to say.
-                    I will let my mum know about this, she could really
-                    make use of Smoothie! Smoothie saved my business.</q>
-                <cite class="testimonials-cite">-from Santa Monica, CA</cite>
-            </blockquote>
-            <img class="testimonials__img-sarah" src="#" alt="Monica">
+            <div>
+                <div class="testimonials-block">
+                    <q class="testimonials__quote">Smoothie is great. I don't know what else to say.
+                        I will let my mum know about this, she could really
+                        make use of Smoothie! Smoothie saved my business.</q>
+                    <cite class="testimonials__cite">-from Santa Monica, CA</cite>
+                </div>
+                <img class="testimonials__img-sarah" src="#" alt="Monica">
+            </div>
         </div>
-        <div>
-            <a class="testimonials__link" href="#"><img class="testimonials-img" src="#"
-                    alt="previus"></a>
-            <a class="testimonials__link" href="#"><img class="testimonials-img" src="#"
-                    alt="next"></a>
+        <div class="testimonials__buttons">
+            <a class="testimonials__link" href="#"><img class="testimonials__link-img" src="#" alt="previus"></a>
+            <a class="testimonials__link" href="#"><img class="testimonials-img" src="#" alt="next"></a>
         </div>
     </section>
 
