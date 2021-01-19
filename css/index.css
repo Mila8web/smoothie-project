@@ -1,7 +1,17 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    src: url(./assets/fonts/Muli-Regular.woff);
+    font-family: Muli-Bold; 
+    src: url(./assets/fonts/Muli-Bold.woff);
+    font-family: Muli-ExtraBold; 
+    src: url(./assets/fonts/Muli-ExtraBold.woff);
+    font-family: Muli-ExtraBoldItalic; 
+    src: url(./assets/fonts/Muli-ExtraBoldItalic.woff);
+    font-family: Poppins-Medium; 
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+    font-family: Poppins-SemBold; 
+    src: url(./assets/fonts/Poppins-SemBold.ttf);
 }
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
@@ -19,9 +29,23 @@ a {
     text-decoration: none;
 }
 
+/* Для всех заголовков одинаковые стили */
+.title {
+    font-family: Muli-ExtraBold;
+    font-weight: normal;
+    line-height: 0pc;
+    letter-spacing: -20;
+}
 
 /* Header */
 
+.header {
+    width: 1493px;
+    height: 1080px;
+    padding: 4px 78px 0 0;
+    mix-blend-mode: color-burn;
+    background: #00b0d8 url(../images/1header/header-bg-img.png);
+}
 
 /* Smoothies */
 
