@@ -2,17 +2,38 @@
 @font-face {
     font-family: MuliRegular; 
     src: url(./assets/fonts/Muli-Regular.woff);
+    font-style: normal;
+}
+@font-face {
     font-family: Muli-Bold; 
     src: url(./assets/fonts/Muli-Bold.woff);
+    font-style: normal;
+}
+
+@font-face {
     font-family: Muli-ExtraBold; 
     src: url(./assets/fonts/Muli-ExtraBold.woff);
+    font-style: normal;
+}
+
+@font-face {
     font-family: Muli-ExtraBoldItalic; 
     src: url(./assets/fonts/Muli-ExtraBoldItalic.woff);
+    font-style: normal;
+}
+
+@font-face {
     font-family: Poppins-Medium; 
     src: url(./assets/fonts/Poppins-Medium.ttf);
+    font-style: normal;
+    }
+
+@font-face {
     font-family: Poppins-SemBold; 
     src: url(./assets/fonts/Poppins-SemBold.ttf);
-}
+    font-style: normal;
+    }
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
@@ -23,28 +44,40 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Muli-Regular' sans-serif;
+}
+
+
+/* Для всех одинаковые стили */
+.ul {
+    list-style: none;
+    margin: 0;
 }
 
 a {
-    text-decoration: none;
+    display: inline-block;
 }
 
-/* Для всех заголовков одинаковые стили */
-.title {
-    font-family: Muli-ExtraBold;
-    font-weight: normal;
-    line-height: 0pc;
-    letter-spacing: -20;
+a:hover {
+    text-decoration: none;
+    
 }
+
+
 
 /* Header */
 
 .header {
-    width: 1493px;
-    height: 1080px;
-    padding: 4px 78px 0 0;
-    mix-blend-mode: color-burn;
-    background: #00b0d8 url(../images/1header/header-bg-img.png);
+    height: 100vh;
+    background: url(../images/1header/header-bg-img.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;
+}
+
+.header__top {
+    padding: 70px 100px 100px;
+    display: flex;
 }
 
 /* Smoothies */
