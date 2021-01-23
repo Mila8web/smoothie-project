@@ -4,39 +4,32 @@
     src: url(./assets/fonts/Muli-Regular.woff);
     font-style: normal;
 }
+/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 @font-face {
-    font-family: Muli-Bold; 
+    font-family: MuliBold; 
     src: url(./assets/fonts/Muli-Bold.woff);
     font-style: normal;
 }
-
 @font-face {
-    font-family: Muli-ExtraBold; 
+    font-family: MuliExtraBold; 
     src: url(./assets/fonts/Muli-ExtraBold.woff);
     font-style: normal;
 }
-
 @font-face {
-    font-family: Muli-ExtraBoldItalic; 
+    font-family: MuliExtraBoldItalic; 
     src: url(./assets/fonts/Muli-ExtraBoldItalic.woff);
     font-style: normal;
 }
-
 @font-face {
-    font-family: Poppins-Medium; 
+    font-family: PoppinsMedium; 
     src: url(./assets/fonts/Poppins-Medium.ttf);
     font-style: normal;
     }
-
 @font-face {
-    font-family: Poppins-SemBold; 
+    font-family: PoppinsSemBold; 
     src: url(./assets/fonts/Poppins-SemBold.ttf);
     font-style: normal;
     }
-
-/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
-
-
 
 /* Общие стили */
 * {
@@ -49,30 +42,42 @@ body {
     font-family: 'Muli-Regular' sans-serif;
     border: 1px solid red;
     margin: 0;
+    
 }
 
 
 /* Для всех одинаковые стили */
+    /* тегам */
 .ul {
-     
+    
 }
 
 .li {
-    
-
+     
 }
 
-a {
+.a {
     display: inline-block;
-}
-
-a:hover {
     text-decoration: none;
-    
 }
 
+.img {}
 
+.span {}
 
+.button {}
+    /* классам */
+.logo {}
+
+.btn {
+    border-radius: 30px;
+    background-color: #0aa566;
+    font-family: MuliExtraBold;
+}
+
+.text {}
+
+.title {}
 /* Header */
 
 .header {
@@ -82,102 +87,166 @@ a:hover {
     background-size: cover;
     color: white;
     border: 1px solid red;
-   
 }
 
 .header__top {
-    padding: 70px 100px 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
+    
 }
-
-
-
+/* применить стиля для меню */
 .header__menu {
-    width: 540px;
-    height: 11px;font-family: Muli;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    color: #ffffff;
-
+    border: 1px solid red;
 }
 
 .menu__list {
     
-    list-style: none; 
-    border: 1px solid red;
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    
-    
+    align-items: center;
+}
+
+/* зададим внешние отступы между li */
+.menu__item:first-child {
+    margin-right: 36px;
+}
+.menu__item:nth-child(2) {
+    margin-right: 30px;
+}
+.menu__item:nth-child(3) {
+    margin-right: 30px;
+}
+.menu__item:nth-child(4) {
+    margin-right: 30px;
+}
+.menu__item:nth-child(5) {
+    margin-right: 30px;
+}
+.menu__item:last-child {
+    margin-right: 0;
 }
 
 .menu__item {
-    margin-right: 35px;
-    
 }
 
 .menu__link {
-    text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
-    color: white;
-    
+    text-decoration: none;
+    font-family: MuliBold;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
 
 }
-
+/* применить стили для логотипа */
 .header__logo {
     border: 1px solid red;
 }
 
+.logo__link{
+
+}
+
+.logo__img {
+
+}
+/* применить стили для иконок поиска и пр. */
+
 .header__personal {
     border: 1px solid red;
-    text-decoration: none;
-    list-style: none; 
+    
 }
 
 .personal__list {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
+.personal__item {
+
+}
+
+.personal__link {
+    text-decoration: none;
+
+}
+
+.personal__icon-search {
+
+}
+
+.personal__icon-user{
+
+}
+
+.personal__cart-icon {
+
+}
+
+.personal__cart-count {
+    
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  font-size: 10px;
+  display: inline-block;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 50%;
+}
+/* применить стили для социальных иконок */
 .header__social {
     border: 1px solid red;
-    text-decoration: none;
-    list-style: none; 
 }
 
 .social__list {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-.personal__cart-count {
-  width: 18px;
-  height: 18px;
-  background-color: #ffffff;
-  width: 18px;
-  height: 18px;
-  color: white;
+.social__list-item {}
+
+.social__link {}
+
+.social__icon {
+    width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  
 }
-
+/* применить стили для кнопки в header */
 .header__content {
     border: 1px solid red;
-    display: flex;
-    justify-content: center;
 }
 
-.btn--bg-green {
-    background: #0aa566;
-    height: 70px;
+.header__btn {
     width: 280px;
-    border-radius: 35px;
-    
+  height: 70px;
+  padding: 25px 39px 23px 38px;
+  border-radius: 35px;
+  border: none;
+  background-color: #0aa566;
+  font-family: MuliExtraBold;
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  color: #ffffff;
 }
+
 
 /* Smoothies */
 
