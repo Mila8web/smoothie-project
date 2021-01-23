@@ -40,7 +40,7 @@
     src: url(./../assets/fonts/Poppins-SemiBold.ttf);
     font-style: normal;
     font-stretch: normal;
-} 
+}
 
 /* Общие стили */
 * {
@@ -61,7 +61,7 @@ body {
 /* Для всех одинаковые стили тегам */
 ul {
     font-family: "MuliBold", sans-serif;
-} 
+}
 
 li {
     list-style: none;
@@ -76,12 +76,12 @@ a {
 button {
     font-family: "MuliExtraBold", sans-serif;
     text-align: left;
-} 
+}
 
 /* классам */
 btn {
     border-radius: 30px;
-    background-color: #0aa566; 
+    background-color: #0aa566;
 }
 
 text {
@@ -90,7 +90,7 @@ text {
 
 title {
     font-family: "MuliExtraBold", sans-serif;
-} 
+}
 
 /* Header */
 
@@ -125,6 +125,7 @@ title {
 .menu__item {
     margin-right: 30px;
 }
+
 .menu__item:last-child {
     margin-right: 0;
 }
@@ -224,9 +225,7 @@ title {
     border-radius: 50%;
 }
 
-.social__icon {
-    
-}
+.social__icon {}
 
 /* применить стили для кнопки в header */
 .header__content {
@@ -245,7 +244,7 @@ title {
     font-size: 24px;
     font-weight: 800;
     color: #ffffff;
-    
+
 }
 
 
@@ -263,27 +262,24 @@ title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
 }
 
 .title--yellow {
     font-size: 50px;
-  font-weight: 800;
-  line-height: 1;
-  text-align: center;
-  color: #f7ae3b;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    color: #f7ae3b;
 }
 
 .title--grey {
     width: 915px;
-   text-align: center;
-  font-size: 18px;
-  line-height: 2;
-  color: #1e1e1e;
-  padding-top: 56px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    color: #1e1e1e;
+    padding-top: 56px;
 }
-
-.smoothies__info {}
 
 .smoothies__info-list {
     display: flex;
@@ -297,23 +293,27 @@ title {
 .smoothies__list-item {
     flex: 1 1 160px;
     text-align: center;
-  line-height: 2;
-  color: #f2612d;  
+    line-height: 2;
+    color: #f2612d;
 }
+
 .smoothies__list-item:nth-child(1),
 .smoothies__list-item:nth-child(2),
-.smoothies__list-item:nth-child(3){
+.smoothies__list-item:nth-child(3) {
     border-bottom: 2px solid #f6edde;
-    border-right: 2px solid #f6edde;  
+    border-right: 2px solid #f6edde;
 }
+
 .smoothies__list-item:nth-child(4) {
-border-bottom: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
 }
+
 .smoothies__list-item:nth-child(5),
 .smoothies__list-item:nth-child(6),
 .smoothies__list-item:nth-child(7) {
     border-right: 2px solid #f6edde;
 }
+
 .smoothies__img {
     display: block;
     margin-left: auto;
@@ -326,14 +326,44 @@ border-bottom: 2px solid #f6edde;
     padding-bottom: 36px;
 }
 
-
-
-
 /* About */
 .about {
     border: 5px solid red;
+    display: flex;
+    justify-content: space-between;
 }
 
+.about__img {
+    border: 1px solid green;
+    flex-wrap: wrap;
+    max-width: 976px;
+}
+
+.about__box {
+    border: 1px solid green;
+    min-width: 942px;
+}
+
+.title--white {
+    width: 588px;
+  height: 102px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1.1px;
+  text-align: left;
+  color: var(--white);
+}
+
+.title--green {}
+
+.about__list {}
+
+.about__list-item {}
+
+.text--bold {}
+
+.about__btn {}
 
 /* Products */
 .products {
@@ -373,4 +403,3 @@ border-bottom: 2px solid #f6edde;
 
 
 /* Здесь будут медиа запросы */
-
