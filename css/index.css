@@ -1,35 +1,46 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff);
+    font-family: "MuliRegular";
+    src: url(./../assets/fonts/Muli-Regular.woff);
     font-style: normal;
+    font-stretch: normal;
 }
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 @font-face {
-    font-family: MuliBold; 
-    src: url(./assets/fonts/Muli-Bold.woff);
+    font-family: "MuliBold";
+    src: url(./../assets/fonts/Muli-ExtraBold.woff);
     font-style: normal;
+    font-stretch: normal;
 }
+
 @font-face {
-    font-family: MuliExtraBold; 
-    src: url(./assets/fonts/Muli-ExtraBold.woff);
+    font-family: "MuliExtraBold";
+    src: url(./../assets/fonts/Muli-ExtraBoldItalic.woff);
     font-style: normal;
+    font-stretch: normal;
 }
+
 @font-face {
-    font-family: MuliExtraBoldItalic; 
-    src: url(./assets/fonts/Muli-ExtraBoldItalic.woff);
+    font-family: "MuliExtraBoldItalic";
+    src: url(./../assets/fonts/Muli-ExtraBoldItalic.woff);
     font-style: normal;
+    font-stretch: normal;
 }
+
 @font-face {
-    font-family: PoppinsMedium; 
-    src: url(./assets/fonts/Poppins-Medium.ttf);
+    font-family: "PoppinsMedium";
+    src: url(./../assets/fonts/Poppins-Medium.ttf);
     font-style: normal;
-    }
+    font-stretch: normal;
+}
+
 @font-face {
-    font-family: PoppinsSemBold; 
-    src: url(./assets/fonts/Poppins-SemBold.ttf);
+    font-family: "PoppinsSemiBold";
+    src: url(./../assets/fonts/Poppins-SemiBold.ttf);
     font-style: normal;
-    }
+    font-stretch: normal;
+} 
 
 /* Общие стили */
 * {
@@ -37,47 +48,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
-body { 
-    font-family: 'Muli-Regular' sans-serif;
+body {
+    font-family: "MuliRegular", sans-serif;
     border: 1px solid red;
     margin: 0;
-    
+
 }
 
 
-/* Для всех одинаковые стили */
-    /* тегам */
-.ul {
-    
+/* Для всех одинаковые стили тегам */
+ul {
+    font-family: "MuliBold", sans-serif;
+} 
+
+li {
 }
 
-.li {
-     
-}
-
-.a {
+a {
     display: inline-block;
     text-decoration: none;
 }
 
-.img {}
+button {
+    font-family: "MuliExtraBold", sans-serif;
+    text-align: left;
+} 
 
-.span {}
-
-.button {}
-    /* классам */
-.logo {}
-
-.btn {
+/* классам */
+btn {
     border-radius: 30px;
-    background-color: #0aa566;
-    font-family: MuliExtraBold;
+    background-color: #0aa566; 
 }
 
-.text {}
+text {
+    font-family: "MuliRegular", sans-serif;
+}
 
-.title {}
+title {
+    font-family: "MuliExtraBold", sans-serif;
+} 
+
 /* Header */
 
 .header {
@@ -86,23 +98,23 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
 .header__top {
+    padding: 70px 100px 100px;
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
+
 /* применить стиля для меню */
 .header__menu {
     border: 1px solid red;
 }
 
 .menu__list {
-    
     list-style: none;
     display: flex;
     align-items: center;
@@ -110,57 +122,59 @@ body {
 
 /* зададим внешние отступы между li */
 .menu__item:first-child {
-    margin-right: 36px;
+    margin-right: 30px;
 }
+
 .menu__item:nth-child(2) {
     margin-right: 30px;
 }
+
 .menu__item:nth-child(3) {
     margin-right: 30px;
 }
+
 .menu__item:nth-child(4) {
     margin-right: 30px;
 }
+
 .menu__item:nth-child(5) {
     margin-right: 30px;
 }
+
 .menu__item:last-child {
     margin-right: 0;
 }
 
-.menu__item {
-}
+.menu__item {}
 
 .menu__link {
     text-transform: uppercase;
     text-decoration: none;
-    font-family: MuliBold;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: left;
-  color: #ffffff;
-
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #ffffff;
 }
+
 /* применить стили для логотипа */
 .header__logo {
     border: 1px solid red;
 }
 
-.logo__link{
+.logo__link {}
 
-}
+.logo__img {}
 
-.logo__img {
-
-}
 /* применить стили для иконок поиска и пр. */
+.header__right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 .header__personal {
     border: 1px solid red;
-    
+    margin-right: 130px;
 }
 
 .personal__list {
@@ -169,39 +183,46 @@ body {
     align-items: center;
 }
 
-.personal__item {
+.personal__item {}
 
+/* зададим внешние отступы между li */
+.personal__item:first-child {
+    margin-right: 45px;
+}
+
+.personal__item:nth-child(2) {
+    margin-right: 45px;
+}
+
+.personal__item:last-child {
+    margin-right: 0;
 }
 
 .personal__link {
     text-decoration: none;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.personal__icon-search {
+.personal__icon-search {}
 
-}
+.personal__icon-user {}
 
-.personal__icon-user{
-
-}
-
-.personal__cart-icon {
-
-}
+.personal__cart-icon {}
 
 .personal__cart-count {
-    
-  margin: 0;
-  width: 18px;
-  height: 18px;
-  background-color: white;
-  font-size: 10px;
-  display: inline-block;
-  line-height: 1.8;
-  text-align: center;
-  border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    font-size: 10px;
+    display: inline-block;
+    line-height: 1.8;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
 }
+
 /* применить стили для социальных иконок */
 .header__social {
     border: 1px solid red;
@@ -210,72 +231,102 @@ body {
 .social__list {
     list-style: none;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.social__list-item {}
+.social__list-item {
+    margin-right: 10px;
+}
 
-.social__link {}
+.social__list-item:last-child {
+    margin-right: 0;
+}
+
+.social__link {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
 
 .social__icon {
-    width: 35px;
-  height: 35px;
-  background-color: white;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    
 }
+
 /* применить стили для кнопки в header */
 .header__content {
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
 .header__btn {
     width: 280px;
-  height: 70px;
-  padding: 25px 39px 23px 38px;
-  border-radius: 35px;
-  border: none;
-  background-color: #0aa566;
-  font-family: MuliExtraBold;
-  font-size: 24px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  color: #ffffff;
+    height: 70px;
+    padding: 25px 39px 23px 38px;
+    border-radius: 35px;
+    border: none;
+    background-color: #0aa566;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    
 }
 
 
 /* Smoothies */
+.smoothies {
+    border: 5px solid blue;
+}
 
 
 /* About */
+.about {
+    border: 5px solid red;
+}
 
 
 /* Products */
+.products {
+    border: 5px solid blue;
+}
 
 
 /* Story */
+.story {
+    border: 5px solid red;
+}
 
 
 /* Testimonials */
+.testimonials {
+    border: 5px solid blue;
+}
 
 
 /* Blog */
+.blog {
+    border: 5px solid red;
+}
 
 
 /* Instagram */
+.instagram {
+    border: 5px solid blue;
+}
 
 
 /* Footer */
+.footer {
+    border: 5px solid red;
+}
 
 
 
 /* Здесь будут медиа запросы */
-
-
-
-
 
