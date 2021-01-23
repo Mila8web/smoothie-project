@@ -252,7 +252,81 @@ title {
 /* Smoothies */
 .smoothies {
     border: 5px solid blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 870px;
+    padding: 100px 0;
 }
+
+.smoothies__report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+.title--yellow {
+    font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: #f7ae3b;
+}
+
+.title--grey {
+    width: 915px;
+   text-align: center;
+  font-size: 18px;
+  line-height: 2;
+  color: #1e1e1e;
+  padding-top: 56px;
+}
+
+.smoothies__info {}
+
+.smoothies__info-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 1010px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.smoothies__list-item {
+    flex: 1 1 160px;
+    text-align: center;
+  line-height: 2;
+  color: #f2612d;  
+}
+.smoothies__list-item:nth-child(1),
+.smoothies__list-item:nth-child(2),
+.smoothies__list-item:nth-child(3){
+    border-bottom: 2px solid #f6edde;
+    border-right: 2px solid #f6edde;  
+}
+.smoothies__list-item:nth-child(4) {
+border-bottom: 2px solid #f6edde;
+}
+.smoothies__list-item:nth-child(5),
+.smoothies__list-item:nth-child(6),
+.smoothies__list-item:nth-child(7) {
+    border-right: 2px solid #f6edde;
+}
+.smoothies__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 90px 25px 86px;
+}
+
+.smoothies-info__title {
+    display: block;
+    padding-bottom: 36px;
+}
+
+
 
 
 /* About */
