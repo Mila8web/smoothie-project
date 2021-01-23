@@ -64,6 +64,8 @@ ul {
 } 
 
 li {
+    list-style: none;
+    text-decoration: none;
 }
 
 a {
@@ -115,41 +117,20 @@ title {
 }
 
 .menu__list {
-    list-style: none;
     display: flex;
     align-items: center;
 }
 
 /* зададим внешние отступы между li */
-.menu__item:first-child {
+.menu__item {
     margin-right: 30px;
 }
-
-.menu__item:nth-child(2) {
-    margin-right: 30px;
-}
-
-.menu__item:nth-child(3) {
-    margin-right: 30px;
-}
-
-.menu__item:nth-child(4) {
-    margin-right: 30px;
-}
-
-.menu__item:nth-child(5) {
-    margin-right: 30px;
-}
-
 .menu__item:last-child {
     margin-right: 0;
 }
 
-.menu__item {}
-
 .menu__link {
     text-transform: uppercase;
-    text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
@@ -162,8 +143,6 @@ title {
 }
 
 .logo__link {}
-
-.logo__img {}
 
 /* применить стили для иконок поиска и пр. */
 .header__right-wrapper {
@@ -183,14 +162,7 @@ title {
     align-items: center;
 }
 
-.personal__item {}
-
-/* зададим внешние отступы между li */
-.personal__item:first-child {
-    margin-right: 45px;
-}
-
-.personal__item:nth-child(2) {
+.personal__item {
     margin-right: 45px;
 }
 
@@ -199,7 +171,6 @@ title {
 }
 
 .personal__link {
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +222,6 @@ title {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-   
 }
 
 .social__icon {
