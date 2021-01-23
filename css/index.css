@@ -79,7 +79,7 @@ button {
 }
 
 /* классам */
-btn {
+.btn {
     border-radius: 30px;
     background-color: #0aa566;
 }
@@ -331,7 +331,8 @@ title {
     background-color: #14826f;
     border: 5px solid red;
     display: flex;
-    flex-grow: 2;
+    justify-content: space-between;
+    min-height: 800px;
 }
 
 .about__box-image {
@@ -343,10 +344,10 @@ title {
 
 .about__box-list {
     border: 1px solid red;
-    width: 942px;
+    width: 586px;
     text-align: left;
-    
-    padding: 96px;
+    padding: 98px 0;
+    margin-right: 360px;
     
 }
 
@@ -354,6 +355,7 @@ title {
   font-size: 55px;
   line-height: 1;
   color: white;
+  
 }
 
 .title--green {
@@ -361,12 +363,18 @@ title {
 }
 
 .about__list {
-    
+    padding-top: 66px;
+    padding-bottom: 50px;
 }
 .about__list-item {
+    padding: 0 0 20px 0;
     font-weight: normal;
     font-family: "MuliRegular";
     list-style-image: url(../images/3about/icons.png);
+    font-size: 21px;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
 .text--bold {
@@ -383,12 +391,64 @@ title {
     line-height: 22px;
     text-align: left;
     color: #ffffff;
+    
     padding-left: 25px;
 }
 
 /* Products */
 .products {
     border: 5px solid blue;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    }
+
+.products__item {
+    width: 25%;
+    padding-top: 130px;
+    text-align: center;
+    color: white;
+    
+}
+
+.products__item--bg-brown {
+    background-color: #632b17;
+}
+.products__item--bg-green {
+    background-color: #178670;
+}
+.products__item--bg-yellow {
+    background-color: #f7ae3b;
+}
+.products__item--bg-red {
+    background-color: #c3471b;
+}
+
+.products__title {
+  font-family: "MuliBold";
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+
+.products__capacity {
+    font-size: 21px;
+  font-style: "MuliItalic";
+  line-height: 2;
+}
+
+.products__btn-white {
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+    width: 204px;
+  height: 60px;
+  border: solid 2px white;
+  background-color: transparent;
+  
+
 }
 
 
@@ -396,6 +456,7 @@ title {
 .story {
     border: 5px solid red;
 }
+
 
 
 /* Testimonials */
