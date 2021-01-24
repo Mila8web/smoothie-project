@@ -453,21 +453,38 @@ button {
 .story__card {
     border: 1px solid blue;
     height: 100%;
-    width: 510px;
-
+    width: 520px;
+    
 }
 
-.title--yellow {
-    width: 219px;
-  height: 48px;
-  line-height: 1;
-  text-align: left;
+.story__title--yellow {
+    font-family: "MuliExtraBold", sans-serif;
+  font-size: 50px;
   color: #f7ae3b;
+  padding: 266px 0px 42px 0px;
 }
 
-.text--white {}
+.story__text {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e1e1e;
+  padding-bottom: 60px;
+}
 
-.story__btn {}
+.story__btn {
+    width: 301px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #0aa566;
+  font-family: "MuliExtraBold", sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 40px;
+  border: none;
+}
 
 /* правая часть к картинкой и облаком */
 .story__image {
@@ -487,6 +504,7 @@ button {
 .testimonials {
     border: 5px solid blue;
 }
+
 
 
 /* Blog */
