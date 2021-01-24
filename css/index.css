@@ -75,21 +75,14 @@ a {
 
 button {
     font-family: "MuliExtraBold", sans-serif;
-    text-align: left;
+    text-align: center;
+
 }
 
 /* классам */
 .btn {
     border-radius: 30px;
     background-color: #0aa566;
-}
-
-text {
-    font-family: "MuliRegular", sans-serif;
-}
-
-title {
-    font-family: "MuliExtraBold", sans-serif;
 }
 
 /* Header */
@@ -262,19 +255,19 @@ title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    width: 910px;
 }
 
-.title--yellow {
+.smoothies__title {
     font-size: 50px;
-    font-weight: 800;
     line-height: 1;
-    text-align: center;
     color: #f7ae3b;
+    font-family: "MuliExtraBold", sans-serif;
+    text-align: center;
 }
 
-.title--grey {
-    width: 915px;
-    text-align: center;
+.smoothies__text {
     font-size: 18px;
     line-height: 2;
     color: #1e1e1e;
@@ -321,6 +314,7 @@ title {
 .smoothies-info__title {
     display: block;
     padding-bottom: 36px;
+    font-family: "MuliExtraBold", sans-serif;
 }
 
 /* About */
@@ -328,7 +322,7 @@ title {
     background-color: #14826f;
     border: 5px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     min-height: 800px;
 }
 
@@ -336,23 +330,21 @@ title {
     border: 1px solid green;
     display: flex;
     flex-wrap: wrap;
+    width: 980px;
 }
-
 
 .about__box-list {
     border: 1px solid red;
-    width: 586px;
-    text-align: left;
+    margin: 0;
     padding: 98px 0;
-    margin-right: 360px;
-    
 }
 
 .title--white {
   font-size: 55px;
   line-height: 1;
   color: white;
-  
+  font-family: "MuliExtraBold", sans-serif;
+  width: 620px;
 }
 
 .title--green {
@@ -388,7 +380,6 @@ title {
     line-height: 22px;
     text-align: left;
     color: #ffffff;
-    
     padding-left: 25px;
 }
 
@@ -453,9 +444,44 @@ title {
 /* Story */
 .story {
     border: 5px solid red;
+    height: 880px;
+    display: flex;
+    justify-content: space-around;
 }
 
+/* левая часть с историей*/
+.story__card {
+    border: 1px solid blue;
+    height: 100%;
+    width: 510px;
 
+}
+
+.title--yellow {
+    width: 219px;
+  height: 48px;
+  line-height: 1;
+  text-align: left;
+  color: #f7ae3b;
+}
+
+.text--white {}
+
+.story__btn {}
+
+/* правая часть к картинкой и облаком */
+.story__image {
+    border: 1px solid blue;
+    width: 1100;
+    height: 100%;
+    
+}
+
+.story__img {
+    width: 586px;
+    height: 602px;
+    padding: 122px 66px 0px 0px;
+}
 
 /* Testimonials */
 .testimonials {
