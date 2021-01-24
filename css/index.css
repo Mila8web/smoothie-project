@@ -573,18 +573,18 @@ button {
 /* Blog */
 .blog {
     border: 5px solid red;
-    min-height: 870px;
+    min-height: 800px;
     display: flex;
     justify-content: center;
 }
 
 .blog__title {
     font-family: "MuliExtraBold";
-  font-size: 50px;
-  line-height: 1;
-  text-align: left;
-  color:#f7ae3b;
-  padding: 100px 0px 50px 0px;
+    font-size: 50px;
+    line-height: 1;
+    text-align: left;
+    color: #f7ae3b;
+    padding: 100px 0px 50px 0px;
 }
 
 .blog__img {}
@@ -595,44 +595,71 @@ button {
 
 .articale__title {
     font-family: "MuliExtraBold";
-  font-size: 30px;
-  line-height: 1;
-  text-align: left;
-  color: #f2612d;
-  padding-top: 330px;
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+    color: #f2612d;
+    padding-top: 330px;
 }
 
 .blog__date {
     width: 94px;
-  height: 14px;
-  font-size: 16px;
-  line-height: 2;
-  text-align: left;
-  color: #1e1e1e;
+    height: 14px;
+    font-size: 16px;
+    line-height: 2;
+    text-align: left;
+    color: #1e1e1e;
 }
 
 .article__text {
-width: 540px;
-  height: 122px;
-  font-size: 18px;
-  line-height: 2;
-  text-align: left;
-  color: #1e1e1e;
-  padding-left: 60px;
-  padding-top: 40px;
+    width: 540px;
+    height: 122px;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    color: #1e1e1e;
+    padding-left: 60px;
+    padding-top: 40px;
 }
 
 .blog__link {}
 
-.btn--text-bold {}
+.btn--text-bold {
+    background-color: aqua;
+    font-weight: 800;
+    font-size: 18px;
+}
 
 
 
 /* Instagram */
 .instagram {
     border: 5px solid blue;
+    padding-bottom: 10px;
+    padding-right: 0;
+    margin-right: 0;
 }
 
+/* иконка инстограмма будут псевдоэлементами */
+
+.instagram__social-link {
+    height: 23px;
+    padding-bottom: 50px;
+    font-family: "MuliExtraBold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 2;
+    color: #0aa566;
+    display: block;
+    text-align: center;
+}
+
+.instagram__gallery {
+    display: flex;
+    justify-content: stretch;
+}
+
+/* иконки будут псевдоэлементами */
 
 /* Footer */
 .footer {
