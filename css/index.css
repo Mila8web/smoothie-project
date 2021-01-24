@@ -453,8 +453,7 @@ button {
 .story__card {
     border: 1px solid blue;
     height: 100%;
-    width: 520px;
-    
+    width: 520px; 
 }
 
 .story__title--yellow {
@@ -491,7 +490,6 @@ button {
     border: 1px solid blue;
     width: 1100;
     height: 100%;
-    
 }
 
 .story__img {
@@ -504,6 +502,28 @@ button {
 .testimonials {
     border: 5px solid blue;
 }
+
+.testimonials__wrapper {}
+
+.testimonials__title {}
+
+.title--red {}
+
+.testimonials__content {}
+
+.testimonials__feedback {}
+
+.text--white {}
+
+.text--orange {}
+
+.testimonials__img {}
+
+.testimonials__buttons {}
+
+.testimonials__btn-link-arrow {}
+
+.testimonials__btn-link-arrow {}
 
 
 
