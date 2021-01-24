@@ -66,6 +66,7 @@ ul {
 li {
     list-style: none;
     text-decoration: none;
+    font-family: "MuliRegular", sans-serif;
 }
 
 a {
@@ -74,16 +75,13 @@ a {
 }
 
 button {
-    font-family: "MuliExtraBold", sans-serif;
-    text-align: center;
-
-}
-
-/* классам */
-.btn {
+    font-family: "MuliExtraBold";
     border-radius: 30px;
     background-color: #0aa566;
 }
+
+/* классам */
+
 
 /* Header */
 
@@ -230,14 +228,13 @@ button {
 .header__btn {
     width: 280px;
     height: 70px;
-    padding: 25px 39px 23px 38px;
+    padding-left: 30px;
     border-radius: 35px;
     border: none;
     background-color: #0aa566;
     font-size: 24px;
-    font-weight: 800;
     color: #ffffff;
-
+    text-align: left;
 }
 
 
@@ -276,12 +273,12 @@ button {
 
 .smoothies__info-list {
     margin: 64px;
-  width: 1016px;
-  height: 390px;
-  flex: 1 1 auto; 
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
+    width: 1016px;
+    height: 390px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
 }
 
 .smoothies__list-item {
@@ -340,11 +337,11 @@ button {
 }
 
 .title--white {
-  font-size: 55px;
-  line-height: 1;
-  color: white;
-  font-family: "MuliExtraBold", sans-serif;
-  width: 620px;
+    font-size: 55px;
+    line-height: 1;
+    color: white;
+    font-family: "MuliExtraBold", sans-serif;
+    width: 620px;
 }
 
 .title--green {
@@ -355,26 +352,27 @@ button {
     padding-top: 66px;
     padding-bottom: 50px;
 }
+
 .about__list-item {
     padding: 0 0 20px 0;
     font-weight: normal;
     font-family: "MuliRegular";
     list-style-image: url(../images/3about/icons.png);
     font-size: 21px;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #ffffff;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ffffff;
 }
 
 .text--bold {
- font-weight: bold;
+    font-weight: bold;
 }
 
 .about__btn {
     width: 380px;
     height: 60px;
     border-radius: 30px;
-  border: solid 2px #f8b231;
+    border: solid 2px #f8b231;
     background-color: transparent;
     font-size: 21px;
     line-height: 22px;
@@ -389,42 +387,45 @@ button {
     height: 720px;
     display: flex;
     justify-content: center;
-    }
+}
 
 .products__item {
     width: 25%;
     padding-top: 130px;
     text-align: center;
     color: white;
-    
+
 }
 
 .products__item--bg-brown {
     background-color: #632b17;
 }
+
 .products__item--bg-green {
     background-color: #178670;
 }
+
 .products__item--bg-yellow {
     background-color: #f7ae3b;
 }
+
 .products__item--bg-red {
     background-color: #c3471b;
 }
 
 .products__title {
-  font-family: "MuliBold";
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  padding-top: 30px;
-  
+    font-family: "MuliBold";
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 30px;
+
 }
 
 .products__capacity {
     font-size: 21px;
-  font-style: "MuliItalic";
-  line-height: 2;
+    font-style: "MuliItalic";
+    line-height: 2;
 }
 
 .products__btn-white {
@@ -432,11 +433,11 @@ button {
     align-items: center;
     padding-left: 38px;
     width: 204px;
-  height: 60px;
-  border: solid 2px white;
-  background-color: transparent;
-  color: #ffffff;
-  
+    height: 60px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: #ffffff;
+
 
 }
 
@@ -453,36 +454,36 @@ button {
 .story__card {
     border: 1px solid blue;
     height: 100%;
-    width: 520px; 
+    width: 520px;
 }
 
 .story__title--yellow {
     font-family: "MuliExtraBold", sans-serif;
-  font-size: 50px;
-  color: #f7ae3b;
-  padding: 266px 0px 42px 0px;
+    font-size: 50px;
+    color: #f7ae3b;
+    padding: 266px 0px 42px 0px;
 }
 
 .story__text {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e1e1e;
-  padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e1e1e;
+    padding-bottom: 60px;
 }
 
 .story__btn {
     width: 301px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: #0aa566;
-  font-family: "MuliExtraBold", sans-serif;
-  font-size: 21px;
-  color: #ffffff;
-  text-align: left;
-  padding-left: 40px;
-  border: none;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #0aa566;
+    font-family: "MuliExtraBold", sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 40px;
+    border: none;
 }
 
 /* правая часть к картинкой и облаком */
@@ -505,17 +506,14 @@ button {
     background-color: #672f1b;
 }
 
-.testimonials__wrapper {
-    
-}
+.testimonials__wrapper {}
 
 .testimonials__title {
     font-family: "MuliExtraBold", sans-serif;
-  font-size: 50px;
-  text-align: center;
-  color: #f7ae3b;
-  padding: 120px 0px 120px 0px;
-
+    font-size: 50px;
+    text-align: center;
+    color: #f7ae3b;
+    padding: 120px 0px 120px 0px;
 }
 
 .title--red {
@@ -530,23 +528,23 @@ button {
 
 .testimonials__feedback {
     width: 460px;
-  height: 130px;
-  text-align: center;
-  margin-right: 60px;
+    height: 130px;
+    text-align: center;
+    margin-right: 60px;
 }
 
 .text--white {
-  font-size: 18px;
-  line-height: 2;
-  color: white;
+    font-size: 18px;
+    line-height: 2;
+    color: white;
 }
 
 .text--orange {
     font-weight: 600;
     font-family: "MuliSemiBoldItalic";
-  color: #f7ae3b;
-  display: block;
-  padding-top: 26px;
+    color: #f7ae3b;
+    display: block;
+    padding-top: 26px;
 }
 
 .testimonials__img {}
@@ -554,23 +552,20 @@ button {
 .testimonials__buttons {
     display: flex;
     justify-content: center;
-    
 }
 
 .testimonials__btn-link-arrow {
-    background-color:aqua;
+    background-color: aqua;
     width: 100px;
-  height: 16px;
-  margin: 121px 68px 0 98px;
-  
+    height: 16px;
+    margin: 121px 68px 0 98px;
 }
 
 .testimonials__btn-link-arrow {
-    background-color:aqua;
+    background-color: aqua;
     width: 100px;
-  height: 16px;
-  margin: 121px 68px 0 98px;
-  
+    height: 16px;
+    margin: 121px 68px 0 98px;
 }
 
 
@@ -578,7 +573,59 @@ button {
 /* Blog */
 .blog {
     border: 5px solid red;
+    min-height: 870px;
+    display: flex;
+    justify-content: center;
 }
+
+.blog__title {
+    font-family: "MuliExtraBold";
+  font-size: 50px;
+  line-height: 1;
+  text-align: left;
+  color:#f7ae3b;
+  padding: 100px 0px 50px 0px;
+}
+
+.blog__img {}
+
+.blog__article {
+    padding-left: 60px;
+}
+
+.articale__title {
+    font-family: "MuliExtraBold";
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #f2612d;
+  padding-top: 330px;
+}
+
+.blog__date {
+    width: 94px;
+  height: 14px;
+  font-size: 16px;
+  line-height: 2;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.article__text {
+width: 540px;
+  height: 122px;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  color: #1e1e1e;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.blog__link {}
+
+.btn--text-bold {}
+
 
 
 /* Instagram */
