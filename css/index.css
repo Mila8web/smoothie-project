@@ -514,16 +514,26 @@ button {
   font-size: 50px;
   text-align: center;
   color: #f7ae3b;
-  padding-top: 116px;
+  padding: 120px 0px 120px 0px;
+
 }
 
 .title--red {
     color: #f2612d;
 }
 
-.testimonials__content {}
+.testimonials__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.testimonials__feedback {}
+.testimonials__feedback {
+    width: 460px;
+  height: 130px;
+  text-align: center;
+  margin-right: 60px;
+}
 
 .text--white {
   font-size: 18px;
@@ -534,13 +544,16 @@ button {
 .text--orange {
     font-weight: 600;
     font-family: "MuliSemiBoldItalic";
-  line-height: 2.5;
   color: #f7ae3b;
+  display: block;
+  padding-top: 26px;
 }
 
 .testimonials__img {}
 
 .testimonials__buttons {
+    display: flex;
+    justify-content: center;
     
 }
 
