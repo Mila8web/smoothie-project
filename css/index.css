@@ -1,43 +1,43 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: "MuliRegular";
-    src: url(./../assets/fonts/Muli-Regular.woff);
+    font-family: "MuliBold";
+    src: url(./../assets/fonts/Muli-Bold.ttf);
     font-style: normal;
     font-stretch: normal;
 }
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 @font-face {
-    font-family: "MuliBold";
-    src: url(./../assets/fonts/Muli-ExtraBold.woff);
+    font-family: "MuliBoldItalic";
+    src: url(./../assets/fonts/Muli-BoldItalic.ttf);
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
     font-family: "MuliExtraBold";
-    src: url(./../assets/fonts/Muli-ExtraBoldItalic.woff);
+    src: url(./../assets/fonts/Muli-ExtraBold.woff);
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
-    font-family: "MuliExtraBoldItalic";
-    src: url(./../assets/fonts/Muli-ExtraBoldItalic.woff);
+    font-family: "MuliItalic";
+    src: url(./../assets/fonts/Muli-Italic.ttf);
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
-    font-family: "PoppinsMedium";
-    src: url(./../assets/fonts/Poppins-Medium.ttf);
+    font-family: "MuliRegular";
+    src: url(./../assets/fonts/Muli-Regular.woff);
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
-    font-family: "PoppinsSemiBold";
-    src: url(./../assets/fonts/Poppins-SemiBold.ttf);
+    font-family: "MuliSemiBoldItalic";
+    src: url(./../assets/fonts/Muli-Semi-BoldItalic.ttf);
     font-style: normal;
     font-stretch: normal;
 }
@@ -53,6 +53,7 @@ html,
 body {
     font-family: "MuliRegular", sans-serif;
     border: 1px solid red;
+    height: 100vh;
     margin: 0;
 
 }
@@ -268,23 +269,38 @@ button {
     font-size: 18px;
     line-height: 2;
     color: #1e1e1e;
-    padding-top: 56px;
+    margin-top: 56px;
+    margin-bottom: 61px;
 }
 
 .smoothies__info-list {
-    margin: 64px;
+    /*margin: 64px;
     width: 1016px;
     height: 390px;
     flex: 1 1 auto;
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
+    align-content: center;*/
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row wrap;*/
+    width: 1016px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .smoothies__list-item {
-    text-align: center;
-    line-height: 2;
     color: #f2612d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 252px;
+    height: 195px;
 }
 
 .smoothies__list-item:nth-child(1),
@@ -304,13 +320,11 @@ button {
 }
 
 .smoothies__img {
-    display: block;
-    padding: 30px 90px 25px 86px;
+    
 }
 
 .smoothies-info__title {
-    display: block;
-    padding-bottom: 36px;
+    margin: 20px 30px 20px 30px;
     font-family: "MuliExtraBold", sans-serif;
 }
 
@@ -332,8 +346,8 @@ button {
 
 .about__box-list {
     border: 1px solid red;
-    margin: 0;
-    padding: 98px 0;
+    margin-top: 98px;
+    margin-left: 35px;
 }
 
 .title--white {
@@ -362,6 +376,7 @@ button {
     line-height: 1;
     letter-spacing: normal;
     color: #ffffff;
+    margin-left: 30px;
 }
 
 .text--bold {
@@ -664,8 +679,7 @@ button {
 /* Footer */
 .footer {
     border: 5px solid red;
-  height: 432px;
-  
+    height: 432px;
 }
 
 .footer__wrapper {
@@ -673,9 +687,13 @@ button {
     height: 372px;
 }
 
-.footer__logo {}
+.footer__logo {
+    border: 1px solid blue;
+}
 
-.footer__information {}
+.footer__information {
+    border: 1px solid blue;
+}
 
 .footer__title {
   height: 20px;
@@ -685,30 +703,38 @@ button {
   color: white;
 }
 
-.footer__info-list {}
+.footer__info-list {
+    border: 1px solid blue;
+}
 
 .footer__list-item {}
 
-.footer__pay-system {}
+.footer__pay-system {
+    border: 1px solid blue;
+}
 
-.footer__pay-system {}
 
 .footer__img-payments {}
 
-.footer__email {}
+.footer__email {
+    border: 1px solid blue;
+}
 
-.footer__input {}
+.footer__input {
+    border: 1px solid blue;
+}
 
 .footer__btn {}
 
-.footer__social-links {}
+.footer__social-links {
+    border: 1px solid blue;
+}
 
 .footer__social-link {}
 
 .footer__basement {
     background-color:#6c2c1c;
     height: 60px;
-    display: flex;
 }
 
 .footer__copyright {
@@ -717,7 +743,6 @@ button {
     line-height: 3;
     color: #af8a82;
     width: 1050px;
-    text-align: end;
 }
 
 .footer__btn-up {
@@ -727,12 +752,9 @@ button {
     line-height: 2.5;
     text-align: left;
     color: white;
-    padding-right: 164px;
 }
 
-.footer__btn-to-top {
-  
-}
+.footer__btn-to-top {}
 
 
 
