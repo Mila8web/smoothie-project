@@ -402,14 +402,17 @@ button {
     height: 720px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+
+    
+
 }
 
 .products__item {
     width: 25%;
     padding-top: 130px;
-    text-align: center;
     color: white;
-
+    
 }
 
 .products__item--bg-brown {
@@ -432,8 +435,6 @@ button {
     font-family: "MuliBold";
     line-height: 1;
     letter-spacing: normal;
-    text-align: center;
-    padding-top: 30px;
 
 }
 
@@ -444,9 +445,6 @@ button {
 }
 
 .products__btn-white {
-    display: flex;
-    align-items: center;
-    padding-left: 38px;
     width: 204px;
     height: 60px;
     border: solid 2px white;
@@ -671,9 +669,13 @@ button {
 
 .instagram__gallery {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
 }
-
+.instagram__img {
+    width: 100%;
+    object-fit: cover;
+    
+}
 /* иконки будут псевдоэлементами */
 
 /* Footer */
