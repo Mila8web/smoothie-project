@@ -61,13 +61,13 @@ body {
 
 /* Для всех одинаковые стили тегам */
 ul {
-    font-family: "MuliBold", sans-serif;
+    
 }
 
 li {
     list-style: none;
     text-decoration: none;
-    font-family: "MuliRegular", sans-serif;
+    font-family: "MuliBold", sans-serif;
 }
 
 a {
@@ -82,7 +82,13 @@ button {
 }
 
 /* классам */
+.title {
+    font-family: "MuliExtraBold";
+}
 
+.text {
+    font-family: "MuliRegular"
+}
 
 /* Header */
 
@@ -261,7 +267,6 @@ button {
     font-size: 50px;
     line-height: 1;
     color: #f7ae3b;
-    font-family: "MuliExtraBold", sans-serif;
     text-align: center;
 }
 
@@ -287,8 +292,8 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 252px;
     height: 195px;
+    flex: 0 1 25%;
 }
 
 .smoothies__list-item:nth-child(1),
@@ -340,7 +345,6 @@ button {
     font-size: 55px;
     line-height: 1;
     color: white;
-    font-family: "MuliExtraBold", sans-serif;
     width: 620px;
 }
 
@@ -510,7 +514,6 @@ button {
 .testimonials__wrapper {}
 
 .testimonials__title {
-    font-family: "MuliExtraBold", sans-serif;
     font-size: 50px;
     text-align: center;
     color: #f7ae3b;
@@ -580,7 +583,6 @@ button {
 }
 
 .blog__title {
-    font-family: "MuliExtraBold";
     font-size: 50px;
     line-height: 1;
     text-align: left;
@@ -595,7 +597,6 @@ button {
 }
 
 .articale__title {
-    font-family: "MuliExtraBold";
     font-size: 30px;
     line-height: 1;
     text-align: left;
@@ -610,6 +611,7 @@ button {
     line-height: 2;
     text-align: left;
     color: #1e1e1e;
+    font-family: "MuliRegular"
 }
 
 .article__text {
@@ -629,6 +631,7 @@ button {
     background-color: aqua;
     font-weight: 800;
     font-size: 18px;
+    font-family: "MuliExtraBoldItalic"
 }
 
 
@@ -690,17 +693,17 @@ button {
 .footer__right-box {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;
 }
 
 .footer__information {
     border: 1px solid blue;
     margin-right: 152px;
-    margin-top: 80px;
 }
 
 .footer__title {
     max-height: 20px;
-    font-family: "MuliExtraBold";
     font-size: 26px;
     line-height: 1.5;
     text-align: left;
@@ -714,7 +717,6 @@ button {
 .footer__list-item {}
 
 .footer__item-link {
-    font-family: "MuliBold";
     font-size: 18px;
     line-height: 2;
     letter-spacing: -0.36px;
@@ -725,7 +727,6 @@ button {
 .footer__pay-system {
     border: 1px solid blue;
     margin-right: 170px;
-    margin-top: 80px;
 }
 
 .pay__box-images {
@@ -744,9 +745,6 @@ button {
 
 .footer__email {
     border: 1px solid blue;
-    margin-top: 80px;
-    font-family: "MuliExtraBold";
-
 }
 
 .footer__input {
@@ -754,13 +752,15 @@ button {
     width: 495px;
     height: 60px;
     border-radius: 30px;
-    background-color: white;
+    background-color: white
+    padding-left: 68px;
+}
+
+input::placeholder {
     font-family: "MuliBold";
     font-size: 17px;
     color: #6d450c;
-    padding-left: 68px;
-    text-decoration: none;
-}
+  }
 
 .footer__btn {
     border: 1px solid blue;
@@ -806,18 +806,29 @@ button {
     line-height: 3;
     color: #af8a82;
     width: 1050px;
+    padding-left: 866px;
+    padding-right: 660px;
 }
 
-.footer__btn-up {
+.footer__btn-go-up {
     border: 1px solid rgb(29, 250, 9);
     font-family: "MuliBold";
     font-size: 16px;
     line-height: 2.5;
-    text-align: left;
     color: white;
+    position: relative;
 }
 
-.footer__btn-to-top {}
+.footer__btn-to-top {
+    width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: none;
+  background-color: #f2662f;
+  position: absolute;
+  z-index: 1;
+  
+}
 
 
 
