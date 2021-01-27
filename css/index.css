@@ -280,6 +280,8 @@ button {
     position: absolute;
     height: 16px;
     width: 30px;
+    top: 30px;
+    right: 38px;
 }
 
 
