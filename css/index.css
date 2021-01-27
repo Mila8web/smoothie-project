@@ -153,6 +153,19 @@ button {
 .header__personal {
     border: 1px solid red;
     margin-right: 130px;
+    position: relative;
+}
+
+.header__personal::after {
+    content: "";
+    height: 2px;
+    width: 48px;
+    background-color: #ffd68f;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -94px;
+    transform: transparenty(-50%);
 }
 
 .personal__list {
@@ -167,6 +180,7 @@ button {
 
 .personal__item:last-child {
     margin-right: 0;
+    position: relative;
 }
 
 .personal__link {
@@ -191,11 +205,23 @@ button {
     text-align: center;
     border-radius: 50%;
     color: black;
+    position: absolute;
+    top: -12px;
+    right: -15px;
 }
 
 /* применить стили для социальных иконок */
 .header__social {
     border: 1px solid red;
+}
+
+.header__social::before {
+    content "yyy";
+    display: inline-block;
+    background-image: url("../images/1header/line.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
 }
 
 .social__list {
@@ -810,13 +836,15 @@ input::placeholder {
     padding-right: 660px;
 }
 
+.footer__basement-right {
+    position: relative;
+}
 .footer__btn-go-up {
     border: 1px solid rgb(29, 250, 9);
     font-family: "MuliBold";
     font-size: 16px;
     line-height: 2.5;
     color: white;
-    position: relative;
 }
 
 .footer__btn-to-top {
@@ -826,8 +854,6 @@ input::placeholder {
   border-color: none;
   background-color: #f2662f;
   position: absolute;
-  z-index: 1;
-  
 }
 
 
