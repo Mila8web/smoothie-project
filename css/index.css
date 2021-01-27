@@ -274,18 +274,6 @@ button {
 }
 
 .smoothies__info-list {
-    /*margin: 64px;
-    width: 1016px;
-    height: 390px;
-    flex: 1 1 auto;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;*/
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-flow: row wrap;*/
     width: 1016px;
     display: flex;
     flex-wrap: wrap;
@@ -400,19 +388,21 @@ button {
 .products {
     border: 5px solid blue;
     height: 720px;
+    flex-wrap: nowrap;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-
+    justify-content: space-between;
     
-
 }
 
 .products__item {
-    width: 25%;
-    padding-top: 130px;
     color: white;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+
 }
 
 .products__item--bg-brown {
@@ -435,13 +425,15 @@ button {
     font-family: "MuliBold";
     line-height: 1;
     letter-spacing: normal;
-
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .products__capacity {
     font-size: 21px;
     font-style: "MuliItalic";
     line-height: 2;
+    margin-bottom: 64px;
 }
 
 .products__btn-white {
@@ -450,8 +442,6 @@ button {
     border: solid 2px white;
     background-color: transparent;
     color: #ffffff;
-
-
 }
 
 
@@ -494,7 +484,7 @@ button {
     font-family: "MuliExtraBold", sans-serif;
     font-size: 21px;
     color: #ffffff;
-    text-align: left;
+
     padding-left: 40px;
     border: none;
 }
@@ -687,32 +677,53 @@ button {
 .footer__wrapper {
     background-color: #f6ab3b;
     height: 372px;
+    display: flex;
+    justify-content: start;
+    
 }
 
 .footer__logo {
     border: 1px solid blue;
+    padding: 130px 280px 170px 100px;
 }
+
 
 .footer__information {
     border: 1px solid blue;
+    margin-right: 152px;
+    margin-top: 80px;
 }
 
 .footer__title {
-  height: 20px;
+  max-height: 20px;
   font-family: "MuliExtraBold";
   font-size: 26px;
   line-height: 1.5;
+  text-align: left;
   color: white;
+  margin-bottom: 44px;
+  
 }
 
 .footer__info-list {
     border: 1px solid blue;
+    
 }
 
-.footer__list-item {}
+.footer__list-item {
+    
+  font-family: "MuliBold";
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: -0.36px;
+  text-align: left;
+  color: #6d450c;
+}
 
 .footer__pay-system {
     border: 1px solid blue;
+    margin-right: 170px;
+    margin-top: 80px;
 }
 
 
@@ -720,13 +731,31 @@ button {
 
 .footer__email {
     border: 1px solid blue;
+    margin-top: 80px;
 }
 
 .footer__input {
     border: 1px solid blue;
+    width: 495px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
 }
 
-.footer__btn {}
+.footer__btn {
+    width: 214px;
+  height: 13px;
+  font-family: "MuliBold";
+  font-size: 17px;
+  line-height: 2.06;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: #6d450c;
+}
+
+.social__box {
+
+}
 
 .footer__social-links {
     border: 1px solid blue;
@@ -736,7 +765,7 @@ button {
 
 .footer__basement {
     background-color:#6c2c1c;
-    height: 60px;
+    max-height: 60px;
 }
 
 .footer__copyright {
