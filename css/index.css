@@ -307,9 +307,7 @@ button {
     border-right: 2px solid #f6edde;
 }
 
-.smoothies__img {
-    
-}
+.smoothies__img {}
 
 .smoothies-info__title {
     margin: 20px 30px 20px 30px;
@@ -391,7 +389,7 @@ button {
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .products__item {
@@ -661,11 +659,13 @@ button {
     display: flex;
     justify-content: space-between;
 }
+
 .instagram__img {
     width: 100%;
     object-fit: cover;
-    
+
 }
+
 /* иконки будут псевдоэлементами */
 
 /* Footer */
@@ -679,7 +679,7 @@ button {
     height: 372px;
     display: flex;
     justify-content: start;
-    
+
 }
 
 .footer__logo {
@@ -688,7 +688,7 @@ button {
 }
 
 .footer__right-box {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -699,23 +699,19 @@ button {
 }
 
 .footer__title {
-  max-height: 20px;
-  font-family: "MuliExtraBold";
-  font-size: 26px;
-  line-height: 1.5;
-  text-align: left;
-  color: white;
-  margin-bottom: 44px;
-  
+    max-height: 20px;
+    font-family: "MuliExtraBold";
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+    margin-bottom: 44px;
+
 }
 
-.footer__info-list {
-  
-}
+.footer__info-list {}
 
-.footer__list-item {
-    
-}
+.footer__list-item {}
 
 .footer__item-link {
     font-family: "MuliBold";
@@ -750,30 +746,33 @@ button {
     border: 1px solid blue;
     margin-top: 80px;
     font-family: "MuliExtraBold";
-    
+
 }
 
 .footer__input {
     border: 1px solid blue;
     width: 495px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: white;
-  font-family: "MuliBold";
-  font-size: 17px;
-  color: #6d450c;
-  padding-left: 68px;
-  text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    font-family: "MuliBold";
+    font-size: 17px;
+    color: #6d450c;
+    padding-left: 68px;
+    text-decoration: none;
 }
 
 .footer__btn {
     border: 1px solid blue;
     width: 150px;
-  font-family: "MuliExtraBold";
-  font-size: 17px;
-  line-height: 2.06;
-  letter-spacing: -0.34px;
-  color: #6d450c;
+    height: 30px;
+    font-family: "MuliExtraBold";
+    font-size: 17px;
+    line-height: 2.06;
+    letter-spacing: -0.34px;
+    color: #6d450c;
+    display: flex;
+    align-items: center;
 }
 
 .footer__social-box {
@@ -787,7 +786,9 @@ button {
 .footer__social-links {
     border: 1px solid blue;
     width: 150px;
-    
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .footer__social-link {
@@ -795,7 +796,7 @@ button {
 }
 
 .footer__basement {
-    background-color:#6c2c1c;
+    background-color: #6c2c1c;
     max-height: 60px;
 }
 
