@@ -710,17 +710,20 @@ button {
 }
 
 .footer__info-list {
-    
+  
 }
 
 .footer__list-item {
     
-  font-family: "MuliBold";
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: -0.36px;
-  text-align: left;
-  color: #6d450c;
+}
+
+.footer__item-link {
+    font-family: "MuliBold";
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #6d450c;
 }
 
 .footer__pay-system {
@@ -729,12 +732,25 @@ button {
     margin-top: 80px;
 }
 
+.pay__box-images {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-.footer__img-payments {}
+.footer__img-payments {
+    margin-right: 16px;
+
+}
 
 .footer__email {
     border: 1px solid blue;
     margin-top: 80px;
+    font-family: "MuliExtraBold";
+    
 }
 
 .footer__input {
@@ -743,28 +759,38 @@ button {
   height: 60px;
   border-radius: 30px;
   background-color: white;
+  font-family: "MuliBold";
+  font-size: 17px;
+  color: #6d450c;
+  padding-left: 68px;
+  text-decoration: none;
 }
 
 .footer__btn {
-    width: 214px;
-  height: 13px;
-  font-family: "MuliBold";
+    border: 1px solid blue;
+    width: 150px;
+  font-family: "MuliExtraBold";
   font-size: 17px;
   line-height: 2.06;
   letter-spacing: -0.34px;
-  text-align: left;
   color: #6d450c;
 }
 
-.social__box {
-
+.footer__social-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .footer__social-links {
     border: 1px solid blue;
+    width: 150px;
+    
 }
 
-.footer__social-link {}
+.footer__social-link {
+    margin-right: 20px;
+}
 
 .footer__basement {
     background-color:#6c2c1c;
