@@ -694,13 +694,15 @@ button {
     background-size: cover;
     width: 764px;
   height: 148px;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
+  opacity: 2;
+  top: -194px;
+  left: -150px;
 
 }
 
-.testimonials__img {}
+.testimonials__img {
+    z-index: 1;
+}
 
 .testimonials__buttons {
     display: flex;
