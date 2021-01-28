@@ -390,6 +390,19 @@ button {
 
 .title--green {
     color: #cae941;
+    position: relative;
+}
+
+.title--green::after{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/3about/Line.png);
+    background-size: cover;
+    width: 450px;
+    height: 13px;
+    position: absolute;
+    left: -17px;
+    top: 100%;
 }
 
 .about__list {
@@ -424,6 +437,21 @@ button {
     text-align: left;
     color: #ffffff;
     padding-left: 25px;
+    position: relative;
+}
+
+.about__btn::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/ArrowRight.png);
+    background-size: cover;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    transform: translateY(30%);
+   
 }
 
 /* Products */
@@ -484,8 +512,25 @@ button {
     border: solid 2px white;
     background-color: transparent;
     color: #ffffff;
+    text-align: start;
+    padding-left: 40px;
+    position: relative;
+
 }
 
+.products__btn-white::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/Arrow.btn-white.png);
+    background-size: cover;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+    
+}
 
 /* Story */
 .story {
@@ -526,9 +571,23 @@ button {
     font-family: "MuliExtraBold", sans-serif;
     font-size: 21px;
     color: #ffffff;
-
     padding-left: 40px;
     border: none;
+    text-align: start;
+    padding-left: 40px;
+    position: relative;
+}
+
+.story__btn::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/ArrowRight.png);
+    background-size: cover;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    top: 24px;
+    right: 38px;
 }
 
 /* правая часть к картинкой и облаком */
@@ -536,14 +595,27 @@ button {
     border: 1px solid blue;
     width: 1100;
     height: 100%;
+    
 }
 
 .story__img {
     width: 586px;
     height: 602px;
     padding: 122px 66px 0px 0px;
+    position: relative;
 }
 
+.story__img::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/5story/Story-Stamp.png);
+    background-size: cover;
+    width: 290px;
+    height: 216px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* Testimonials */
 .testimonials {
     border: 5px solid blue;
@@ -851,7 +923,9 @@ input::placeholder {
 }
 
 .footer__basement-right {
-    position: relative;
+    position: absolute;
+    right: 100px;
+    top: -60%;
 }
 .footer__btn-go-up {
     border: 1px solid rgb(29, 250, 9);
@@ -865,9 +939,8 @@ input::placeholder {
     width: 50px;
   height: 50px;
   border-radius: 5px;
-  border-color: none;
   background-color: #f2662f;
-  position: absolute;
+
 }
 
 
