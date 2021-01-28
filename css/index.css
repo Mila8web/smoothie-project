@@ -366,6 +366,7 @@ button {
     display: flex;
     justify-content: left;
     min-height: 800px;
+    
 }
 
 .about__box-image {
@@ -373,6 +374,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     width: 980px;
+    position: relative;
+    bottom: -85px;
+    left: 160px;
 }
 
 .about__box-list {
@@ -457,7 +461,7 @@ button {
 /* Products */
 .products {
     border: 5px solid blue;
-    height: 720px;
+    min-height: 720px;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
@@ -489,6 +493,11 @@ button {
 
 .products__item--bg-red {
     background-color: #c3471b;
+}
+
+.products__img {
+    height: 303px;
+    width: 119px;
 }
 
 .products__title {
@@ -538,8 +547,21 @@ button {
     height: 890px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
+.story::after {
+    display:inline-block;
+    content: "";
+    background-image: url(../images/5story/Dots.png);
+    background-size: cover;
+    width: 410px;
+    height: 300px;
+    position: absolute;
+    bottom: -230px;
+    right: 58px;
+
+}
 /* левая часть с историей*/
 .story__card {
     border: 1px solid blue;
@@ -595,6 +617,7 @@ button {
     border: 1px solid blue;
     width: 1100;
     height: 100%;
+    position: relative;
     
 }
 
@@ -602,19 +625,18 @@ button {
     width: 586px;
     height: 602px;
     padding: 122px 66px 0px 0px;
-    position: relative;
 }
 
-.story__img::before {
+.story__image::before {
+    position: absolute;
     display: inline-block;
     content: "";
     background-image: url(../images/5story/Story-Stamp.png);
     background-size: cover;
     width: 290px;
     height: 216px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    top: 15%;
+    left: -30%;
 }
 /* Testimonials */
 .testimonials {
