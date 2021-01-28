@@ -683,6 +683,21 @@ button {
     color: #f7ae3b;
     display: block;
     padding-top: 26px;
+    position: relative;
+}
+
+.text--orange::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("../images/6testimonials/Sarah.png");
+    background-size: cover;
+    width: 764px;
+  height: 148px;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+
 }
 
 .testimonials__img {}
@@ -695,8 +710,9 @@ button {
 .testimonials__btn-link-arrow {
     background-color: aqua;
     width: 100px;
-    height: 16px;
+    height: 50px;
     margin: 121px 68px 0 98px;
+    
 }
 
 .testimonials__btn-link-arrow {
@@ -705,8 +721,6 @@ button {
     height: 16px;
     margin: 121px 68px 0 98px;
 }
-
-
 
 /* Blog */
 .blog {
