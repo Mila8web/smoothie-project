@@ -461,7 +461,7 @@ button {
 /* Products */
 .products {
     border: 5px solid blue;
-    min-height: 720px;
+    height: 720px;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
@@ -853,19 +853,43 @@ button {
     color: #0aa566;
     display: block;
     text-align: center;
+    position: relative;
+}
+
+.instagram__social-link::before {
+    display: block;
+    content: "";
+    background-image: url(../images/8instagram/Instagram-Icon.png);
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    bottom: 30px;
+    left: 850px;
 }
 
 .instagram__gallery {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .instagram__img {
     width: 100%;
     object-fit: cover;
-
 }
 
+.instagram__gallery::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url(../images/8instagram/FotoIcon.png);
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    bottom: 20px;
+    right: 20px;
+}
 /* иконки будут псевдоэлементами */
 
 /* Footer */
@@ -942,6 +966,7 @@ button {
 
 .footer__email {
     border: 1px solid blue;
+    position: relative;
 }
 
 .footer__input {
@@ -949,7 +974,7 @@ button {
     width: 495px;
     height: 60px;
     border-radius: 30px;
-    background-color: white
+    background-color: white;
     padding-left: 68px;
 }
 
@@ -957,7 +982,20 @@ input::placeholder {
     font-family: "MuliBold";
     font-size: 17px;
     color: #6d450c;
-  }
+    position: relative;
+}
+
+.footer__email::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(../images/9footer/FooterImput-Icon.png);
+    background-size: cover;
+    width: 24px;
+    height: 19px;
+    top: 84px;
+    left: 30px;
+}
 
 .footer__btn {
     border: 1px solid blue;
@@ -970,6 +1008,24 @@ input::placeholder {
     color: #6d450c;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.instagram__img--berries::before,
+.instagram__img--vegetabls::before,
+.instagram__img--tropic::before,
+.instagram__img--herbal::before,
+.instagram__img--milk::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(../images/9footer/FooterImput-Arrow.png);
+    background-size: cover;
+    width: 48px;
+    height: 43px;
+    top: -25%;
+    left: -66px;
+    transform: translateY(-25%);
 }
 
 .footer__social-box {
@@ -994,7 +1050,8 @@ input::placeholder {
 
 .footer__basement {
     background-color: #6c2c1c;
-    max-height: 60px;
+    min-height: 60px;
+    width: 100%;
 }
 
 .footer__copyright {
@@ -1002,7 +1059,6 @@ input::placeholder {
     font-size: 13px;
     line-height: 3;
     color: #af8a82;
-    width: 1050px;
     padding-left: 866px;
     padding-right: 660px;
 }
@@ -1022,10 +1078,9 @@ input::placeholder {
 
 .footer__btn-to-top {
     width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  background-color: #f2662f;
-
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2662f;
 }
 
 
