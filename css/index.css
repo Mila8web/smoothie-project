@@ -375,7 +375,7 @@ button {
     flex-wrap: wrap;
     width: 980px;
     position: relative;
-    bottom: -85px;
+    bottom: -95px;
     left: 160px;
 }
 
@@ -498,13 +498,14 @@ button {
 .products__img {
     height: 303px;
     width: 119px;
+    margin-top: 80px;
 }
 
 .products__title {
     font-family: "MuliBold";
     line-height: 1;
     letter-spacing: normal;
-    margin-top: 40px;
+    margin-top: 34px;
     margin-bottom: 10px;
 }
 
@@ -512,7 +513,7 @@ button {
     font-size: 21px;
     font-style: "MuliItalic";
     line-height: 2;
-    margin-bottom: 64px;
+    margin-bottom: 66px;
 }
 
 .products__btn-white {
@@ -538,7 +539,6 @@ button {
     top: 50%;
     right: 38px;
     transform: translateY(-50%);
-    
 }
 
 /* Story */
@@ -779,10 +779,6 @@ button {
     border-radius:35px;
     top: 268px;
     left: -104px;
-    -webkit-border-radius:35px;
-    -moz-border-radius:35px;
-    -ms-border-radius:35px;
-    -o-border-radius:35px;
 }
 
 .blog__date {
@@ -1093,9 +1089,6 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
-
 
 
 /* Здесь будут медиа запросы */
