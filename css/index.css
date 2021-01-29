@@ -881,7 +881,7 @@ button {
 
 .instagram__gallery::before {
     position: absolute;
-    display: inline-block;
+    display: block;
     content: "";
     background-image: url(../images/8instagram/FotoIcon.png);
     background-size: cover;
@@ -976,6 +976,11 @@ button {
     border-radius: 30px;
     background-color: white;
     padding-left: 68px;
+    background-image:url(../images/9footer/FooterImput-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 30px center;
+
+    
 }
 
 input::placeholder {
@@ -983,10 +988,12 @@ input::placeholder {
     font-size: 17px;
     color: #6d450c;
     position: relative;
+    
+    
 }
 
 .footer__email::before {
-    position: absolute;
+    /*position: absolute;
     display: block;
     content: "";
     background-image: url(../images/9footer/FooterImput-Icon.png);
@@ -994,7 +1001,7 @@ input::placeholder {
     width: 24px;
     height: 19px;
     top: 84px;
-    left: 30px;
+    left: 30px;*/
 }
 
 .footer__btn {
@@ -1011,11 +1018,7 @@ input::placeholder {
     position: relative;
 }
 
-.instagram__img--berries::before,
-.instagram__img--vegetabls::before,
-.instagram__img--tropic::before,
-.instagram__img--herbal::before,
-.instagram__img--milk::before {
+.footer__email::before{
     position: absolute;
     display: block;
     content: "";
@@ -1023,9 +1026,8 @@ input::placeholder {
     background-size: cover;
     width: 48px;
     height: 43px;
-    top: -25%;
-    left: -66px;
-    transform: translateY(-25%);
+    top: 136px;
+    left: 120px;
 }
 
 .footer__social-box {
@@ -1062,8 +1064,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*padding-left: 866px;
-    padding-right: 660px;*/
 }
 
 .footer__basement-right {
@@ -1086,13 +1086,12 @@ input::placeholder {
     border-radius: 5px;
     background-color: #f2662f;
     position: absolute;
-    top: -120%;
+    top: -125%;
     right: 100px;
-    transform: translateY(-120%);
-    -webkit-transform: translateY(-120%);
-    -moz-transform: translateY(-120%);
-    -ms-transform: translateY(-120%);
-    -o-transform: translateY(-120%);
+    transform: translateY(-125%);
+    background-image: url(../images/9footer/goTopArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
