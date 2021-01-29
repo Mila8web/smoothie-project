@@ -1059,14 +1059,15 @@ input::placeholder {
     font-size: 13px;
     line-height: 3;
     color: #af8a82;
-    padding-left: 866px;
-    padding-right: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-left: 866px;
+    padding-right: 660px;*/
 }
 
 .footer__basement-right {
-    position: absolute;
-    right: 100px;
-    top: -60%;
+    position: relative;
 }
 .footer__btn-go-up {
     border: 1px solid rgb(29, 250, 9);
@@ -1074,6 +1075,9 @@ input::placeholder {
     font-size: 16px;
     line-height: 2.5;
     color: white;
+    position: absolute;
+    top: -42px;
+    right: 164px;
 }
 
 .footer__btn-to-top {
@@ -1081,6 +1085,14 @@ input::placeholder {
     height: 50px;
     border-radius: 5px;
     background-color: #f2662f;
+    position: absolute;
+    top: -120%;
+    right: 100px;
+    transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
 }
 
 
