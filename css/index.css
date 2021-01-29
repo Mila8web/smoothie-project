@@ -675,6 +675,8 @@ button {
     font-size: 18px;
     line-height: 2;
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .text--orange {
@@ -701,27 +703,35 @@ button {
 }
 
 .testimonials__img {
-    z-index: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .testimonials__buttons {
     display: flex;
     justify-content: center;
+    padding-left: 100px;
 }
 
 .testimonials__btn-link-arrow {
-    background-color: aqua;
-    width: 100px;
-    height: 50px;
-    margin: 121px 68px 0 98px;
-    
+    margin: 121px 100px 0 0;
+    position: relative;
 }
 
-.testimonials__btn-link-arrow {
-    background-color: aqua;
-    width: 100px;
+.testimonials__btn-link-arrow::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
     height: 16px;
-    margin: 121px 68px 0 98px;
+    background-image: url(../images/ArrowLeft.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+.testimonials__btn-link-arrow:last-child::before {
+    transform: rotate(180deg);
 }
 
 /* Blog */
@@ -740,7 +750,10 @@ button {
     padding: 100px 0px 50px 0px;
 }
 
-.blog__img {}
+.blog__img {
+    position: relative;
+    z-index: 1;
+}
 
 .blog__article {
     padding-left: 60px;
@@ -752,6 +765,24 @@ button {
     text-align: left;
     color: #f2612d;
     padding-top: 330px;
+    position: relative;
+}
+
+.articale__title::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 686px;
+    height: 14px;
+    background-image: url(../images/7blog/Line.png);
+    background-size: cover;
+    border-radius:35px;
+    top: 268px;
+    left: -104px;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
 }
 
 .blog__date {
@@ -778,12 +809,28 @@ button {
 .blog__link {}
 
 .btn--text-bold {
-    background-color: aqua;
     font-weight: 800;
     font-size: 18px;
-    font-family: "MuliExtraBoldItalic"
+    font-family: "MuliExtraBoldItalic";
+    position: relative;
 }
 
+.btn--text-bold::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 10px;
+    background-image: url(../images/7blog/blogArrow.png);
+    background-size: cover;
+    top: 25%;
+    left: 100px;
+    transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    -moz-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    -o-transform: translateY(25%);
+}
 
 
 /* Instagram */
