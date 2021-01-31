@@ -375,7 +375,7 @@ button {
     flex-wrap: wrap;
     width: 980px;
     position: relative;
-    bottom: -95px;
+    bottom: -90px;
     left: 160px;
 }
 
@@ -452,13 +452,13 @@ button {
     width: 30px;
     height: 16px;
     position: absolute;
-    top: 10%;
+    top: 30%;
     right: 30px;
-    transform: translateY(10%);
-    -webkit-transform: translateY(10%);
-    -moz-transform: translateY(10%);
-    -ms-transform: translateY(10%);
-    -o-transform: translateY(10%);
+    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
 }
 
 /* Products */
@@ -506,6 +506,7 @@ button {
 
 .products__title {
     font-family: "MuliBold";
+    font-size: 24px;
     line-height: 1;
     letter-spacing: normal;
     margin-top: 34px;
@@ -527,7 +528,7 @@ button {
     text-align: start;
     padding-left: 40px;
     position: relative;
-
+    font-size: 21px;
 }
 
 .products__btn-white::after {
@@ -869,17 +870,20 @@ button {
 .instagram__gallery {
     display: flex;
     justify-content: space-between;
+}
+
+.instagram__img-wrap{
     position: relative;
+    flex: 0 1 20%;
+    object-fit: cover; 
 }
 
 .instagram__img {
     width: 100%;
-    object-fit: cover;
 }
 
-.instagram__gallery::before {
+.instagram__img-wrap::before {
     position: absolute;
-    display: block;
     content: "";
     background-image: url(../images/8instagram/FotoIcon.png);
     background-size: cover;
