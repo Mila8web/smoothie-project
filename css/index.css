@@ -546,7 +546,7 @@ button {
 
 /* Story */
 .story {
-    border: 5px solid red;
+    border: 1px solid red;
     height: 890px;
     display: flex;
     justify-content: space-around;
@@ -643,7 +643,7 @@ button {
 }
 /* Testimonials */
 .testimonials {
-    border: 5px solid blue;
+    border: 1px solid blue;
     height: 720px;
     background-color: #672f1b;
 }
@@ -739,7 +739,7 @@ button {
 
 /* Blog */
 .blog {
-    border: 5px solid red;
+    border: 1px solid red;
     min-height: 800px;
     display: flex;
     justify-content: center;
@@ -834,7 +834,7 @@ button {
 
 /* Instagram */
 .instagram {
-    border: 5px solid blue;
+    border: 1px solid blue;
     padding-bottom: 10px;
     padding-right: 0;
     margin-right: 0;
@@ -896,7 +896,7 @@ button {
 
 /* Footer */
 .footer {
-    border: 5px solid red;
+    border: 1px solid red;
     height: 432px;
 }
 
@@ -963,7 +963,6 @@ button {
 
 .footer__img-payments {
     margin-right: 16px;
-
 }
 
 .footer__email {
@@ -981,8 +980,6 @@ button {
     background-image:url(../images/9footer/FooterImput-Icon.png);
     background-repeat: no-repeat;
     background-position: 30px center;
-
-    
 }
 
 input::placeholder {
@@ -990,8 +987,6 @@ input::placeholder {
     font-size: 17px;
     color: #6d450c;
     position: relative;
-    
-    
 }
 
 .footer__email::before {
