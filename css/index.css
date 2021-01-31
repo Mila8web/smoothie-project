@@ -216,7 +216,6 @@ button {
 }
 
 .header__social::before {
-    content "yyy";
     display: inline-block;
     background-image: url("../images/1header/line.png");
     background-size: cover;
@@ -479,7 +478,6 @@ button {
     justify-content: center;
     width: 25%;
     height: 100%;
-
 }
 
 .products__item--bg-brown {
