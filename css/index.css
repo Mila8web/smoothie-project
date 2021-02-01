@@ -838,8 +838,6 @@ button {
     margin-right: 0;
 }
 
-/* иконка инстограмма будут псевдоэлементами */
-
 .instagram__social-link {
     height: 70px;
     padding-bottom: 50px;
@@ -852,7 +850,7 @@ button {
     text-align: center;
     position: relative;
 }
-
+/* иконка инстaграмма - псевдоэлемент */
 .instagram__social-link::before {
     display: block;
     content: "";
@@ -862,7 +860,7 @@ button {
     height: 26px;
     position: absolute;
     bottom: 30px;
-    left: 820px;
+    left: 850px;
 }
 
 .instagram__gallery {
