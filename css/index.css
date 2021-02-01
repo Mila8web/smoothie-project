@@ -561,7 +561,6 @@ button {
     position: absolute;
     bottom: -230px;
     right: 58px;
-
 }
 /* левая часть с историей*/
 .story__card {
@@ -696,11 +695,10 @@ button {
     background-image: url("../images/6testimonials/Sarah.png");
     background-size: cover;
     width: 764px;
-  height: 148px;
-  opacity: 2;
-  top: -194px;
-  left: -150px;
-
+    height: 148px;
+    opacity: 2;
+    top: -194px;
+    left: -150px;
 }
 
 .testimonials__img {
@@ -982,18 +980,6 @@ input::placeholder {
     font-size: 17px;
     color: #6d450c;
     position: relative;
-}
-
-.footer__email::before {
-    /*position: absolute;
-    display: block;
-    content: "";
-    background-image: url(../images/9footer/FooterImput-Icon.png);
-    background-size: cover;
-    width: 24px;
-    height: 19px;
-    top: 84px;
-    left: 30px;*/
 }
 
 .footer__btn {
