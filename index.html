@@ -18,8 +18,14 @@
     <!-- Здесь будет структура документа (HTML) -->
     <header class="header">
         <!-- оборачиваем в div без logo -->
-        <div class="header__navigation">
-            <div class="header__top">
+        <div class="header__top">
+
+            <!-- для меню "до 768px" добавляем burger -->
+            <button class="header__burger-btn">
+                <img class="header__burger-btn-icon" src="./images/1header/menu.svg" alt="#">
+            </button>
+
+            <div class="header__navigation">
                 <nav class="menu header__menu">
                     <ul class="menu__list">
                         <li class="menu__item">

@@ -106,20 +106,42 @@ button {
     border: 1px solid red;
     position: relative;
 }
+
+/* для кнопки-меню */
+.header__burger-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
+
+.header__burger-btn-icon {
+    width: 100%;
+}
+
 /* добавим медиа запрос header__top*/
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .header__top {
         display: none;
     }
-}
+}*/
 
 .header__navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 /* добавим медиа запрос header__navigation*/
 @media (max-width: 768px) {
+    .header__burger-btn {
+        display: block;
+    }
+
     .header__navigation {
         display: none;
     }
