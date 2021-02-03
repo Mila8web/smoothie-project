@@ -102,26 +102,11 @@ button {
 }
 
 .header__top {
-    padding: 70px 100px 100px;
+    padding: 70px 100px 70px;
     border: 1px solid red;
     position: relative;
 }
 
-/* для кнопки-меню */
-.header__burger-btn {
-    background-color: transparent;
-    border: none;
-    width: 30px;
-    height: 30px;
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 40px;
-}
-
-.header__burger-btn-icon {
-    width: 100%;
-}
 
 /* добавим медиа запрос header__top*/
 /*@media (max-width: 768px) {
@@ -130,23 +115,12 @@ button {
     }
 }*/
 
-.header__navigation{
+.header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-/* добавим медиа запрос header__navigation*/
-@media (max-width: 768px) {
-    .header__burger-btn {
-        display: block;
-    }
-
-    .header__navigation {
-        display: none;
-    }
-}
-
 
 /* применить стиля для меню */
 .header__menu {
@@ -174,13 +148,6 @@ button {
     text-align: left;
     color: #ffffff;
 }
-
-/* применить стили для логотипа */
-.header__logo {
-    border: 1px solid red;
-}
-
-.logo__link {}
 
 /* применить стили для иконок поиска и пр. */
 .header__right-wrapper {
@@ -288,6 +255,32 @@ button {
 }
 
 .social__icon {}
+
+/* для кнопки-меню */
+.header__burger-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
+
+.header__burger-btn-icon {
+    width: 100%;
+}
+
+/* применить стили для логотипа */
+.header__logo {
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo__link {}
 
 /* применить стили для кнопки в header */
 .header__content {
@@ -1111,5 +1104,13 @@ input::placeholder {
     background-position: center;
 }
 
-
 /* Здесь будут медиа запросы */
+
+@media (max-width: 768px) {
+    .header__navigation {
+        display: none;
+    }
+    .header__burger-btn {
+        display: block;
+    }
+}

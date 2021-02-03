@@ -17,14 +17,8 @@
 <body>
     <!-- Здесь будет структура документа (HTML) -->
     <header class="header">
-        <!-- оборачиваем в div без logo -->
         <div class="header__top">
-
-            <!-- для меню "до 768px" добавляем burger -->
-            <button class="header__burger-btn">
-                <img class="header__burger-btn-icon" src="./images/1header/menu.svg" alt="#">
-            </button>
-
+    <!-- оборачиваем в div без logo -->
             <div class="header__navigation">
                 <nav class="menu header__menu">
                     <ul class="menu__list">
@@ -91,12 +85,19 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="logo header__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__img" src="images/Logo.png" alt="logo">
-            </a>
+            <!-- для меню "до 768px" добавляем burger -->
+            <button class="header__burger-btn">
+                <img class="header__burger-btn-icon" src="./images/1header/menu.svg" alt="#">
+            </button>
+
+            <!-- перенесли лого из навигации -->
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="images/Logo.png" alt="logo">
+                </a>
+            </div>
+
         </div>
 
         <div class="header__content">
