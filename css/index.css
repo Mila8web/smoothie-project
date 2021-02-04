@@ -1133,3 +1133,30 @@ input::placeholder {
         z-index: 999999;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1500px) {
+    .header__navigation {
+        position: fixed;
+        padding-top: 100px;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .header__menu {
+        margin-right: 30px;
+    }
+    .menu__list {
+        flex-direction: column;
+    }
+    .menu__item {
+        margin-top: 7px;
+    }
+    .header__burger-btn {
+        display: block;
+        z-index: 999999;
+    }
+    .header__btn {
+        position: absolute;
+        bottom: 70%;
+        right: 5%;
+    }
+}
