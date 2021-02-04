@@ -1104,42 +1104,17 @@ input::placeholder {
     background-position: center;
 }
 
-/* Здесь будут медиа запросы */
+/* -------------Здесь будут медиа запросы------------- */
 
-@media (max-width: 768px) {
-    .header__navigation {
-        position: fixed;
-        background-color: #0aa566;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 999999;
-        flex-direction: column-reverse;
-        padding: 100px 0;
-        justify-content: flex-end;
-    }
-    .menu__list {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 400px;
-        margin-top: 100px;
-    }
-    .menu__item {
-        margin-right: 0;
-    }
-    .header__burger-btn {
-        display: block;
-        z-index: 999999;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1500px) {
-    .header__navigation {
+/*---- доп медиа запрос для header -------------*/
+@media screen and (max-width: 1500px) {
+    
+    /*.header__navigation {
         position: fixed;
         padding-top: 100px;
         justify-content: flex-start;
         align-items: start;
+        display: none;
     }
     .header__menu {
         margin-right: 30px;
@@ -1158,5 +1133,124 @@ input::placeholder {
         position: absolute;
         bottom: 70%;
         right: 5%;
+    }*/
+
+      /* About */
+    .about__box-image {
+        margin: 10px;
+        bottom: 0;
+        left: 0;
+        width: 430px;
+        height: 520px;
+        
     }
+    .about__img {
+        object-fit: cover;
+        width: 427px;
+        height: 518px;
+    }
+}
+/* медиа запрос для средних ПК */
+@media screen and (max-width: 1200px) {
+    /* About */
+    .about {
+    }
+    .about__box-image {
+        margin: 10px;
+        bottom: -200px;
+        left: 0;
+        width: 310px;
+        height: 400px;
+        
+    }
+    .about__img {
+        object-fit: cover;
+        width: 305px;
+        height: 370px;
+    }
+    .title--white {
+        font-size: 45px;
+        width: 100%;
+    }
+
+}
+
+/* медиа запрос для планшетов */
+@media screen and (max-width: 992px) {
+    
+    /* smoothies */
+    .smoothies {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .smoothies__report {
+        width: 100%;
+    }
+
+    .smoothies__text {
+        font-size: 20px;
+    }
+
+    .smoothies__info-list {
+        width: 100%;
+        justify-content: none;
+    }
+
+    .smoothies__list-item {
+        flex: 0 1 50%;
+    }
+
+    .smoothies__list-item:nth-child(2),
+    .smoothies__list-item:nth-child(6) {
+        border-right: none;
+    }
+
+    .smoothies__list-item:nth-child(5),
+    .smoothies__list-item:nth-child(6) {
+        border-bottom: 2px solid #f6edde;
+    }
+
+    .smoothies__img {
+        padding-bottom: 20px;
+    }
+
+    .smoothies-info__title {
+        margin: 0;
+    }
+}
+
+/* медиа запрос для смартфонов */
+@media screen and (max-width: 768px) {
+    .header__navigation {
+        position: fixed;
+        background-color: #0aa566;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999999;
+        flex-direction: column-reverse;
+        padding: 100px 0;
+        justify-content: flex-end;
+        display: none;
+    }
+    .menu__list {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .menu__item {
+        margin-right: 0;
+    }
+    .header__burger-btn {
+        display: block;
+        z-index: 999999;
+    }
+
+}
+
+/* медиа запрос для мобилочек */
+@media screen and (max-width: 360px) {
+
 }
