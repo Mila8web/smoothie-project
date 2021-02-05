@@ -1140,37 +1140,59 @@ input::placeholder {
         margin: 10px;
         bottom: 0;
         left: 0;
-        width: 430px;
-        height: 520px;
+        width: 450px;
+        height: 530px;
         
     }
     .about__img {
         object-fit: cover;
-        width: 427px;
-        height: 518px;
+        width: 440px;
+        height: 520px;
     }
 }
 /* медиа запрос для средних ПК */
 @media screen and (max-width: 1200px) {
     /* About */
-    .about {
-    }
+    
     .about__box-image {
         margin: 10px;
         bottom: -200px;
-        left: 0;
-        width: 310px;
-        height: 400px;
-        
+        left: 10px;
+        width: 320px;
+        height: 380px;
+    }
+    .about__box-list{
+        margin-top: 40px;
+        margin-left: 35px;
     }
     .about__img {
         object-fit: cover;
-        width: 305px;
-        height: 370px;
+        width: 300px;
+        height: 355px;
     }
     .title--white {
         font-size: 45px;
-        width: 100%;
+        width: 80%;
+        line-height: 1.2;
+    }
+    .title--green::after{
+        width: 350px;
+        height: 8px;
+        left: 0px;
+        top: 100%;
+    }
+    .about__list {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .about__list-item {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .about__btn {
+        width: 350px;
+        height: 50px;
+        font-size: 18px;
     }
 
 }
@@ -1221,7 +1243,7 @@ input::placeholder {
 
 /* медиа запрос для смартфонов */
 @media screen and (max-width: 768px) {
-    .header__navigation {
+    /* .header__navigation {
         position: fixed;
         background-color: #0aa566;
         top: 0;
@@ -1246,8 +1268,52 @@ input::placeholder {
     .header__burger-btn {
         display: block;
         z-index: 999999;
-    }
+    } */
+/* About */
+.about {
+    display: block;
+}
 
+.about__box-image {
+    width: 210px;
+    height: 260px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about__img {
+    width: 200px;
+    height: 240px;
+}
+.about__box-list {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.title--white {
+    font-size: 35px;
+    width: 80%;
+    line-height: 1.2;
+    text-align: center;
+}
+.title--green::after {
+    width: 250px;
+    height: 5px;
+    left: 0px;
+}
+.about__list {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.about__list-item {
+    line-height: 1.4;
+}
+.about__btn {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 }
 
 /* медиа запрос для мобилочек */
