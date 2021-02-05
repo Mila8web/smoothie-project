@@ -1212,7 +1212,14 @@ input::placeholder {
     .products__title {
         text-align: center;
     }
-
+    /* Story */
+    .story__card {
+        padding: 20px;
+        width: 400px;
+    }
+    .story__image::before {
+        top: 10%;
+    }
 }
 
 /* медиа запрос для планшетов */
@@ -1272,6 +1279,51 @@ input::placeholder {
         width: 150px;
         padding-left: 20px;
     }
+    /* Story */
+.story {
+    flex-direction: column;
+}
+/* левая часть с историей*/
+.story__card {
+    padding: 20px;
+    width: 400px;
+    height: 450px;
+    margin-left: 200px;
+}
+.story__title--yellow {
+    padding-top: 10px;
+}
+.smoothies__text {
+    padding-bottom: 20px;
+}
+/* правая часть к картинкой и облаком */
+.story__image {
+    width: 400px;
+    height: 320px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.story__img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -20%;
+    left: 20%;
+}
+
+.story__image::before {
+    width: 200px;
+    height: 150px;
+    top: 0;
+    left: -30%;
+}
+.story::after {
+    width: 200px;
+    height: 146px;
+    bottom: -92px;
+    right: 50px;
+}
 }
 
 /* медиа запрос для смартфонов */
@@ -1367,6 +1419,15 @@ input::placeholder {
 
     .products__title {
         text-align: center;
+    }
+    /* Story */
+    .story__card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .story__image {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
