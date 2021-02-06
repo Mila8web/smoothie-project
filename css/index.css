@@ -1381,13 +1381,16 @@ input::placeholder {
     }
     .story__title--yellow{
         padding: 0;
+        padding-bottom: 55px;
     }
     .story__image {
         width: 100%;
         padding: 0 ;
-        padding: 90px;
+        padding: 10px 90px;
 }
-.story__image::before{}
+.story__image::before{
+    display: none;
+}
 }
 
 /* медиа запрос для мобилочек */
