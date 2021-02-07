@@ -21,8 +21,10 @@
     <!-- оборачиваем в div без logo -->
             <div class="header__navigation">
                 <nav class="menu header__menu">
-                    <input class="toggleMenu" type="checkbox" name="toggle" id="menu">
-                    <label class="toggleMenu" for="menu"><i class="fa"></i>Меню</label>
+                    <input type="checkbox" id="menu__toggle">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">Home</a>
@@ -89,9 +91,9 @@
             </div>
 
             <!-- для меню "до 768px" добавляем burger -->
-            <button class="header__burger-btn">
+            <!-- <button class="header__burger-btn">
                 <img class="header__burger-btn-icon" src="./images/1header/listBlack.svg" alt="#">
-            </button>
+            </button> -->
 
             <!-- перенесли лого из навигации -->
             <div class="logo header__logo">

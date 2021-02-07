@@ -248,7 +248,7 @@ button {
 .social__icon {}
 
 /* для кнопки-меню */
-.header__burger-btn {
+/* .header__burger-btn {
     background-color: transparent;
     border: none;
     width: 50px;
@@ -261,9 +261,9 @@ button {
 
 .header__burger-btn-icon {
     width: 100%;
-} 
+}  */
 /* стили для кнопки-меню методом checkbox */
-.header__menu [type="checkbox"] {
+/* .header__menu [type="checkbox"] {
     display: none;
 }
 .header__menu label.toggleMenu {
@@ -283,7 +283,9 @@ button {
     top: 15px;
     left: 12px;
     font-size: 18px;
-}
+} */
+
+/* вариант 3 с бургером */
 
 /* применить стили для логотипа */
 .header__logo {
@@ -1243,7 +1245,7 @@ input::placeholder {
     html, body {
         font-size: 13px;
     }
-    .header__navigation {
+    /* .header__navigation {
         position: fixed;
         background-color: #0aa566;
         top: 0;
@@ -1268,10 +1270,10 @@ input::placeholder {
     .header__burger-btn {
         display: block;
         z-index: 999999;
-    } 
+    }  */
 
     /* медиа для кнопки-меню */
-    .header__menu {
+    /* .header__menu {
         overflow: hidden;
     } 
     .header__menu ul {
@@ -1290,7 +1292,7 @@ input::placeholder {
     }
     input.toggleMenu:checked~ul {
         display: block;
-    }
+    } */
 
      /* smoothies */
     .smoothies {
@@ -1469,10 +1471,11 @@ input::placeholder {
     align-items: center;
 }
 .blog__title {
-    padding: 50px 0px 50px 0px;
+    text-align: center;
+    padding-top: 50px;
 }
 .blog__article {
-    padding-left: 0px;
+    padding-right: 20px;
 }
 .article__title {
     margin-top: 50px;
@@ -1483,6 +1486,7 @@ input::placeholder {
 .article__text {
     margin-top: 10px;
     padding-bottom: 50px;
+    width: 100%;
 }
 .btn--text-bold::after {
     left: 120px;
