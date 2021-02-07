@@ -57,7 +57,6 @@ body {
     margin: 0;
     width: 100vw;
     font-size: 10px;
-
 }
 
 
@@ -106,14 +105,6 @@ button {
     border: 1px solid red;
     position: relative;
 }
-
-
-/* добавим медиа запрос header__top*/
-/*@media (max-width: 768px) {
-    .header__top {
-        display: none;
-    }
-}*/
 
 .header__navigation {
     display: flex;
@@ -595,13 +586,14 @@ button {
 .story__card {
     border: 1px solid blue;
     padding-bottom: 290px;
+    width: 520px;
 }
 
 .story__title--yellow {
     font-family: "MuliExtraBold", sans-serif;
     font-size: 5.0rem;
     color: #f7ae3b;
-    padding: 266px 0px 42px 0px;
+    margin: 266px 0px 42px 0px;
 }
 
 .story__text {
@@ -610,7 +602,7 @@ button {
     letter-spacing: normal;
     text-align: left;
     color: #1e1e1e;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .story__btn {
@@ -781,16 +773,16 @@ button {
     padding-left: 60px;
 }
 
-.articale__title {
+.article__title {
     font-size: 3.0rem;
     line-height: 1;
     text-align: left;
     color: #f2612d;
-    padding-top: 330px;
+    margin-top: 330px;
     position: relative;
 }
 
-.articale__title::before {
+.article__title::before {
     position: absolute;
     display: block;
     content: "";
@@ -799,7 +791,7 @@ button {
     background-image: url(../images/7blog/Line.png);
     background-size: cover;
     border-radius: 35px;
-    top: 268px;
+    top: -50px;
     left: -104px;
 }
 
@@ -815,16 +807,17 @@ button {
 
 .article__text {
     width: 540px;
-    height: 122px;
     font-size: 1.8rem;
     line-height: 2;
     text-align: left;
     color: #1e1e1e;
     padding-left: 60px;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
-.blog__link {}
+.blog__link {
+    color: #1e1e1e;
+}
 
 .btn--text-bold {
     font-weight: 800;
@@ -856,8 +849,7 @@ button {
 }
 
 .instagram__social-link {
-    height: 70px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-family: "MuliExtraBold";
     font-size: 2.4rem;
     font-weight: 800;
@@ -877,8 +869,8 @@ button {
     width: 26px;
     height: 26px;
     position: absolute;
-    bottom: 30px;
-    left: 850px;
+    bottom: 10px;
+    left: 820px;
 }
 
 .instagram__gallery {
@@ -912,15 +904,13 @@ button {
 /* Footer */
 .footer {
     border: 1px solid red;
-    height: 432px;
 }
 
 .footer__wrapper {
     background-color: #f6ab3b;
-    height: 372px;
+    min-height: 372px;
     display: flex;
     justify-content: start;
-
 }
 
 .footer__logo {
@@ -1230,7 +1220,7 @@ input::placeholder {
         font-size: 20px;
     }
 
-    /* .header__navigation {
+     .header__navigation {
         position: fixed;
         background-color: #0aa566;
         top: 0;
@@ -1255,7 +1245,7 @@ input::placeholder {
     .header__burger-btn {
         display: block;
         z-index: 999999;
-    } */
+    } 
 
      /* smoothies */
     .smoothies {
@@ -1368,6 +1358,7 @@ input::placeholder {
     .story {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .story::after {
         display: none;
@@ -1376,8 +1367,8 @@ input::placeholder {
         padding: 20px;
     }
     .story__title--yellow{
-        padding: 0;
-        padding-bottom: 40px;
+        margin: 0;
+        margin-bottom: 40px;
         font-size: 7rem;
     }
     .story__text,
@@ -1421,6 +1412,73 @@ input::placeholder {
 .testimonials__btn-link-arrow::before {
     width: 60px;
     height: 32px;
+}
+/* Blog */
+.blog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog__title {
+    padding: 50px 0px 50px 0px;
+}
+.blog__article {
+    padding-left: 0px;
+}
+.article__title {
+    margin-top: 50px;
+}
+.article__title::before {
+    display: none;
+}
+.article__text {
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+/* Instagram */
+.instagram__social-link::before {
+    bottom: 10px;
+    left: 250px;
+}
+.instagram__gallery {
+    overflow-x: auto;
+}
+.instagram__img-wrap {
+    flex: 1 0 70%;
+}
+.instagram__social-link {
+    margin: 10px 0 10px;
+}
+
+/* Footer */
+.footer__wrapper {
+    flex-wrap: wrap;
+    display: block;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 10px;
+}
+.footer__logo {
+    padding: 0px; 
+    display: flex;
+    justify-content: center;
+}
+.footer__right-box {
+    padding: 0px; 
+    flex-wrap: wrap;
+}
+.footer__information {
+    margin-right: 0px;
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+.footer__pay-system {
+    margin-right: 0;
+    flex-basis: 50%;
+}
+.footer__email {
+    flex-basis: 100%;
 }
 }
 
