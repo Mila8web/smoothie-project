@@ -724,11 +724,11 @@ button {
 .testimonials__buttons {
     display: flex;
     justify-content: center;
-    padding: 0 0 80px 100px;
+    padding: 120px 0 0 100px;
 }
 
 .testimonials__btn-link-arrow {
-    padding: 120px 100px 0 0;
+    padding: 80px 100px 0 0;
     position: relative;
 }
 
@@ -1220,7 +1220,7 @@ input::placeholder {
         font-size: 20px;
     }
 
-     .header__navigation {
+    .header__navigation {
         position: fixed;
         background-color: #0aa566;
         top: 0;
