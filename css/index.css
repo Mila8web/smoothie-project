@@ -261,6 +261,28 @@ button {
 
 .header__burger-btn-icon {
     width: 100%;
+} 
+/* стили для кнопки-меню методом checkbox */
+.header__menu [type="checkbox"] {
+    display: none;
+}
+.header__menu label.toggleMenu {
+    background: gray;
+    display: none;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.header__menu label.toggleMenu.fa {
+    position: absolute;
+    content: "";
+    background-image: url(/images/1header/listBlack.svg);
+    background-size: cover;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
 }
 
 /* применить стили для логотипа */
@@ -665,7 +687,7 @@ button {
 .testimonials__wrapper {}
 
 .testimonials__title {
-    font-size: 5.0rem;
+    font-size: 50px;
     text-align: center;
     color: #f7ae3b;
     padding: 120px 0px 120px 0px;
@@ -688,7 +710,7 @@ button {
 }
 
 .text--white {
-    font-size: 1.8rem;
+    font-size: 18px;
     line-height: 2;
     color: white;
     position: relative;
@@ -698,6 +720,7 @@ button {
 .text--orange {
     font-family: "MuliSemiBoldItalic";
     color: #f7ae3b;
+    font-size: 18px;
     display: block;
     padding-top: 26px;
     position: relative;
@@ -1215,11 +1238,11 @@ input::placeholder {
 } 
 
 /* медиа запрос для смартфонов */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 20px;
-    }
 
+@media screen and (max-width: 768px) {
+    html, body {
+        font-size: 13px;
+    }
     .header__navigation {
         position: fixed;
         background-color: #0aa566;
@@ -1241,11 +1264,33 @@ input::placeholder {
     }
     .menu__item {
         margin-right: 0;
-    }
+    }   
     .header__burger-btn {
         display: block;
         z-index: 999999;
     } 
+
+    /* медиа для кнопки-меню */
+    .header__menu {
+        overflow: hidden;
+    } 
+    .header__menu ul {
+        display: block;
+    }
+    .menu__list {
+        display: none;
+    }
+    .header__menu label.toggleMenu {
+        display: block;
+        
+    }
+    input.toggleMenu:checked+label.toggleMenu{
+        background:#c3471b;
+        color: #ffffff;
+    }
+    input.toggleMenu:checked~ul {
+        display: block;
+    }
 
      /* smoothies */
     .smoothies {
@@ -1257,7 +1302,7 @@ input::placeholder {
     }
 
     .smoothies__text {
-        font-size: 20px;
+        font-size: ;
     }
 
     .smoothies__info-list {
@@ -1297,27 +1342,23 @@ input::placeholder {
         width: 600px;
         justify-content: center;
         padding-top: 10px;
+        width: 80%;
     }
 
     .about__box-list {
-        margin-top: 20px;
-        margin-left: 20px;
+        padding: 20px;
+        margin: 0;
     }
 
     .title--white {
         width: 100%;
         font-size: 5.0rem;
-        line-height: 1.2;
+        line-height: 1;
         text-align: center;
     }
 
-    .about__list {
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-
     .about__list-item {
-        font-size: 2.5rem;
+        font-size: ;
         line-height: 1.4;
     }
 
@@ -1325,7 +1366,7 @@ input::placeholder {
         width: 450px;
         height: 70px;
         margin-bottom: 20px;
-        font-size: 2.5rem;
+        font-size: ;
     }
 
     /* Products */
@@ -1344,14 +1385,14 @@ input::placeholder {
 
     .products__title {
         text-align: center;
-        font-size: 3.4rem;
+        font-size: ;
     }
     .products__capacity {
-        font-size: 3.0rem;
+        font-size: ;
     }
     .products__btn-white {
-        font-size: 3.0rem;
-        width: 300px;
+        font-size: ;
+        width: 230px;
     }
 
     /* Story */
@@ -1365,15 +1406,16 @@ input::placeholder {
     }
     .story__card {
         padding: 20px;
+        width: 100%;
     }
     .story__title--yellow{
         margin: 0;
         margin-bottom: 40px;
-        font-size: 7rem;
+        font-size: ;
     }
     .story__text,
     .story__btn {
-        font-size: 3rem;
+        font-size: ;
     }
     
     .story__image {
@@ -1399,19 +1441,26 @@ input::placeholder {
 }
 .testimonials__feedback {
     margin-right: 0px;
+    width: 80%;
+}
+.text--white,
+.text--orange {
+    font-size: 22px;
+    line-height: 1.5;
 }
 .text--orange::before  {
-    width: 512px;
+    /* width: 512px;
     height: 100px;
     top: -400px;
-    left: -7%;
+    left: -7%; */
+    display: none;
 }
 .testimonials__buttons {
     padding: 50px 0 0 100px;
 }
 .testimonials__btn-link-arrow::before {
-    width: 60px;
-    height: 32px;
+    width: 50px;
+    height: 24px;
 }
 /* Blog */
 .blog {
@@ -1435,11 +1484,16 @@ input::placeholder {
     margin-top: 10px;
     padding-bottom: 50px;
 }
+.btn--text-bold::after {
+    left: 120px;
+    width: 25px;
+    height: 14px;
+}
 
 /* Instagram */
 .instagram__social-link::before {
-    bottom: 10px;
-    left: 250px;
+    bottom: 15px;
+    left: 220px;
 }
 .instagram__gallery {
     overflow-x: auto;
