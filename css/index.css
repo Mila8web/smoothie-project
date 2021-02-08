@@ -1087,6 +1087,12 @@ input::placeholder {
 }
 
 /* -------------Здесь будут медиа запросы------------- */
+/* ------ДОПМЕДИАЗАПРОС ДО 1900px------ */
+@media screen and (max-width: 1900px) {
+    .instagram__social-link::before {
+        display: none;
+    }
+}
 /* ------ДОПМЕДИАЗАПРОС ДО 1500px------ */
 @media screen and (max-width: 1620px) {
     .about__img {
