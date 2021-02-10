@@ -1239,6 +1239,42 @@ input::placeholder {
         margin-right: 24px;
     }
 
+    /* -------------SMOOTHIES------------- */
+    .smoothies {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .smoothies__report {
+        width: 100%;
+    }
+
+    .smoothies__info-list {
+        width: 100%;
+        justify-content: none;
+    }
+
+    .smoothies__list-item {
+        flex: 0 1 50%;
+    }
+
+    .smoothies__list-item:nth-child(2),
+    .smoothies__list-item:nth-child(6) {
+        border-right: none;
+    }
+
+    .smoothies__list-item:nth-child(5),
+    .smoothies__list-item:nth-child(6) {
+        border-bottom: 2px solid #f6edde;
+    }
+
+    .smoothies__img {
+        padding-bottom: 20px;
+    }
+
+    .smoothies-info__title {
+        margin: 0;
+    }
+
     /* -------------ABOUT------------- */
     .about {
         display: block;
