@@ -1039,14 +1039,43 @@ input::placeholder {
 
 /* -------------Здесь будут медиа запросы------------- */
 
-/* ------ДОПМЕДИАЗАПРОС ДО 1500px------ */
-@media screen and (max-width: 1620px) {}
+/* ------ДОПМЕДИАЗАПРОС ДО 1850px------ */
+@media screen and (max-width: 1850px) {
+    .footer__wrapper {
+        justify-content: space-around;
+    }
+    .footer__logo {
+        margin: auto;
+    }
+    .footer__right-box {
+        padding: 60px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__information,
+    .footer__pay-system {
+        margin: 0 10% 5%;
+    }
+}
 
 /* ------ДОПМЕДИАЗАПРОС ДО 1500px------ */
 @media screen and (max-width: 1500px) {}
 
 /* ------МЕДИАЗАПРОС ДЛЯ ПК ДО 1400px------ */
-@media screen and (max-width: 1400px) {}
+/* @media screen and (max-width: 1400px) {
+    .footer__logo {
+        margin: 0 100px;
+    }
+    .footer__right-box {
+        padding: 40px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__information,
+    .footer__pay-system {
+        margin: 0 0 40px 0;
+    }
+} */
 
 /* ------МЕДИАЗАПРОС ДЛЯ СРЕДНИХ ПК ДО 1200px------ */
 @media screen and (max-width: 1200px) {}
