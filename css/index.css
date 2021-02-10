@@ -867,11 +867,13 @@ button {
     background-color: #f6ab3b;
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 
 .footer__logo {
     border: 1px solid blue;
-    padding: 130px 280px 170px 100px;
+    padding: 130px 0 170px 100px;
+    margin-right: 280px;
 }
 
 .footer__right-box {
