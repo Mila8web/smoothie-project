@@ -127,7 +127,6 @@ button {
 .menu__link {
     text-transform: uppercase;
     font-size: 1.6rem;
-    line-height: 1.5;
     text-align: left;
     color: #ffffff;
 }
@@ -816,7 +815,7 @@ button {
     line-height: 2;
     color: #0aa566;
     position: relative;
-} 
+}
 
 /* иконка инстaграмма - псевдоэлемент */
 .instagram__social-link::before {
@@ -1062,4 +1061,4 @@ input::placeholder {
 @media screen and (max-width: 576px) {}
 
 /* ------МЕДИАЗАПРОС ДЛЯ МОБИЛОЧЕК ДО 360px------ */
-@media screen and (max-width: 360px) {} 
+@media screen and (max-width: 360px) {}
