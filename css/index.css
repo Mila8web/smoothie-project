@@ -1312,6 +1312,30 @@ input::placeholder {
         margin-bottom: 20px;
     }
 
+    /* -------------PRODUCTS------------- */
+    .products {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .products__item {
+        flex: 0 0 70%;
+        padding: 60px;
+    }
+
+    .products__img {
+        width: 150px;
+    }
+
+    .products__title {
+        text-align: center;
+    }
+
+    .products__btn-white {
+        font-size: 2.4rem;
+        width: 230px;
+    }
+
     /* -------------STORY------------- */
     .story {
         flex-direction: column;
