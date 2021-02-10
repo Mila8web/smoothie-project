@@ -87,7 +87,6 @@ button {
 }
 
 /* -------------HEADER------------- */
-
 .header {
     height: 100%;
     background: url(../images/1header/header-bg-img.png);
@@ -284,7 +283,6 @@ button {
     align-items: center;
     flex-direction: column;
     min-height: 870px;
-    padding: 100px 0;
 }
 
 .smoothies__report {
@@ -292,7 +290,6 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 910px;
 }
 
 .smoothies__title {
@@ -300,18 +297,19 @@ button {
     line-height: 1;
     color: #f7ae3b;
     text-align: center;
+    padding-top: 100px;
 }
 
 .smoothies__text {
     font-size: 1.8rem;
     line-height: 2;
     color: #1e1e1e;
-    margin-top: 56px;
-    margin-bottom: 61px;
+    max-width: 910px;
+    margin: 56px 0 60px;
 }
 
 .smoothies__info-list {
-    width: 1016px;
+    max-width: 1016px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -550,7 +548,6 @@ button {
     right: 58px;
 }
 
-/* левая часть с историей*/
 .story__card {
     border: 1px solid blue;
     padding-bottom: 290px;
@@ -600,7 +597,6 @@ button {
     right: 38px;
 }
 
-/* правая часть c картинкой и облаком */
 .story__image {
     border: 1px solid blue;
     position: relative;
@@ -806,7 +802,6 @@ button {
     transform: translateY(25%);
 }
 
-
 /* -------------INSTAGRAM------------- */
 .instagram {
     border: 1px solid blue;
@@ -826,10 +821,10 @@ button {
     line-height: 2;
     color: #0aa566;
     position: relative;
-}
+} */
 
 /* иконка инстaграмма - псевдоэлемент */
-.instagram__social-link::before {
+/* .instagram__social-link::before {
     display: block;
     content: "";
     background-image: url(../images/8instagram/Instagram-Icon.png);
@@ -1069,4 +1064,4 @@ input::placeholder {
 @media screen and (max-width: 576px) {}
 
 /* ------МЕДИАЗАПРОС ДЛЯ МОБИЛОЧЕК ДО 360px------ */
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {} 
