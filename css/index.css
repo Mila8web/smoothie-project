@@ -816,10 +816,10 @@ button {
     line-height: 2;
     color: #0aa566;
     position: relative;
-} */
+} 
 
 /* иконка инстaграмма - псевдоэлемент */
-/* .instagram__social-link::before {
+.instagram__social-link::before {
     display: block;
     content: "";
     background-image: url(../images/8instagram/Instagram-Icon.png);
@@ -834,6 +834,7 @@ button {
 .instagram__gallery {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .instagram__img-wrap {
