@@ -51,9 +51,7 @@
 html,
 body {
     font-family: "MuliRegular", sans-serif;
-    border: 1px solid red;
     margin: 0;
-    width: 100vw;
     height: 100vh;
     font-size: 10px;
 }
@@ -97,7 +95,6 @@ button {
 
 .header__top {
     padding: 70px 100px 70px;
-    border: 1px solid red;
     position: relative;
 }
 
@@ -355,7 +352,6 @@ button {
     border: 1px solid red;
     display: flex;
     justify-content: left;
-    min-height: 800px;
 }
 
 .about__box-image {
@@ -381,7 +377,7 @@ button {
     font-size: 5.5rem;
     line-height: 1;
     color: white;
-    width: 620px;
+    max-width: 620px;
 }
 
 .title--green {
@@ -402,8 +398,8 @@ button {
 }
 
 .about__list {
-    padding-top: 66px;
-    padding-bottom: 50px;
+    margin-top: 66px;
+    margin-bottom: 50px;
 }
 
 .about__list-item {
@@ -581,7 +577,6 @@ button {
     padding-left: 40px;
     border: none;
     text-align: start;
-    padding-left: 40px;
     position: relative;
 }
 
@@ -630,7 +625,8 @@ button {
     font-size: 50px;
     text-align: center;
     color: #f7ae3b;
-    padding: 120px 0px 120px 0px;
+    padding-top: 120px;
+    margin-bottom: 120px;
 }
 
 .title--red {
@@ -733,7 +729,7 @@ button {
 }
 
 .blog__article {
-    padding-left: 60px;
+    margin-left: 60px;
 }
 
 .article__title {
@@ -769,13 +765,12 @@ button {
 }
 
 .article__text {
-    width: 540px;
     font-size: 1.8rem;
     line-height: 2;
     text-align: left;
     color: #1e1e1e;
-    padding-left: 60px;
-    margin-top: 40px;
+    margin: 40px 0 0 60px;
+    max-width: 472px;
 }
 
 .blog__link {
