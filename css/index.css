@@ -1174,10 +1174,29 @@ input::placeholder {
     #menu__toggle:checked~.menu__list {
         visibility: visible;
     }
-
-    .header__right-wrapper {
-        display: none;
+    /* ------------------------------------------ */
+    .header__logo {
+        left: 25%;
     }
+    /* <!--  -------------ABOUT-------------  --> */
+    .about {
+        justify-content: space-around;
+    }
+    .about__img {
+        padding-left: 0;
+        padding-top: 0; 
+        width: 100%;
+    }
+    .about__box-list {
+        margin-left: 0;
+    }
+    /* -------------BLOG------------- */
+.blog {
+    padding: 0 30px 0 30px;
+}
+.article__title::before {
+    left: -490px;
+}
 }
 
 /* ------МЕДИАЗАПРОС ДЛЯ ПК ДО 1400px------ */
@@ -1200,7 +1219,64 @@ input::placeholder {
 @media screen and (max-width: 1200px) {}
 
 /* ------МЕДИАЗАПРОС ДЛЯ ПЛАНШЕТОВ ДО 992px------ */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .header__navigation {
+        justify-content: space-around;
+    }
+    .header__right-wrapper {
+        flex-direction: column;
+    }
+    .header__personal {
+        margin-right: 0;
+    }
+    .personal__list {
+        margin-bottom: 60px;
+    }
+    .header__personal::after {
+        display: none;
+    }
+    .social__list-item {
+        margin-right: 24px;
+    }
+
+    /* -------------ABOUT------------- */
+    .about {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .about__box-image {
+        justify-content: center;
+    }
+    .about__img {
+        width: 500px;
+        padding: 10px;
+    }
+
+    .about__box-list {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .title--white {
+        width: 100%;
+        font-size: 4.0rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .about__list-item {
+        font-size: 2.1rem;
+        line-height: 1.4;
+    }
+
+    .about__btn {
+        width: 450px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* ------МЕДИАЗАПРОС ДЛЯ СМАРТФОНОВ ДО 768px------ */
 @media screen and (max-width: 768px) {}
