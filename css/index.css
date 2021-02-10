@@ -1233,6 +1233,10 @@ input::placeholder {
 
 /* ------МЕДИАЗАПРОС ДЛЯ ПЛАНШЕТОВ ДО 992px------ */
 @media screen and (max-width: 992px) {
+    html, body {
+        font-size: 12px;
+    }
+    /* -------------HEADER------------- */
     .header__navigation {
         justify-content: space-around;
     }
@@ -1309,18 +1313,17 @@ input::placeholder {
 
     .title--white {
         width: 100%;
-        font-size: 4.0rem;
         line-height: 1;
         text-align: center;
     }
 
-    .about__list-item {
-        font-size: 2.1rem;
-        line-height: 1.4;
+    .title--green::after {
+        width: 450px;
+        height: 13px;
     }
 
     .about__btn {
-        width: 450px;
+        width: 460px;
         height: 70px;
         margin-bottom: 20px;
     }
@@ -1394,9 +1397,51 @@ input::placeholder {
     .story__image::before {
         display: none;
     }
-    /* testimonials */
+    /* -------------TESTIMONIALS------------- */
     .text--orange::before {
         display: none;
+    }
+
+     /* -------------BLOG------------- */
+    .blog {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog__article {
+        margin-left: 0px;
+    }
+
+    .blog__title {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .article__title {
+        margin-top: 50px;
+    }
+
+    .blog__img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .article__title::before {
+        display: none;
+    }
+
+    .article__text {
+        margin-top: 10px;
+        padding-bottom: 50px;
+        width: 90%;
+    }
+
+    .btn--text-bold::after {
+        left: 110px;
+        width: 29px;
+        height: 16px;
+        top: 0;
     }
     
     /* -------------INSTAGRAM------------- */
