@@ -8,14 +8,11 @@
 
 .personal__item {
     margin-right: 45px;
+    &:last-child {
+        margin-right: 0;
+        position: relative;
+    }
 }
-
-.personal__item:last-child {
-    margin-right: 0;
-    position: relative;
-}
-
-//main: ./main.less
 
 .personal__link {
     display: flex;
@@ -37,6 +34,7 @@
     top: -12px;
     right: -15px;
 }
+
 
 /* ------МЕДИАЗАПРОСЫ------ */
 @media screen and (max-width: 992px) {

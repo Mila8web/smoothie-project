@@ -8,18 +8,17 @@
 /* зададим внешние отступы между li */
 .menu__item {
     margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
-
-.menu__item:last-child {
-    margin-right: 0;
-}
-
 .menu__link {
     text-transform: uppercase;
     font-size: 1.6rem;
     text-align: left;
     color: #ffffff;
 }
+
 
 @media screen and (max-width: 1500px) {
     /* ------вариант №3 с гамбургером------ */

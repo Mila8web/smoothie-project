@@ -6,93 +6,90 @@
     background-position: center;
     background-size: cover;
     color: white;
-}
 
-.header__top {
-    padding: 70px 100px 70px;
-    position: relative;
-}
-
-.header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* применить стиля для меню */
-/*------------------ для кнопки-меню ---------------*/
-.header__burger-btn {
-    background-color: transparent;
-    border: none;
-    width: 50px;
-    height: 50px;
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 40px;
-}
-
-.header__burger-btn-icon {
-    width: 100%;
-}
-/* ---------------------------------------------- */
-/* применить стили для иконок поиска и пр. */
-.header__right-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.header__personal {
-    margin-right: 130px;
-    position: relative;
-}
-
-.header__personal::after {
-    content: "";
-    height: 2px;
-    width: 48px;
-    background-color: #ffd68f;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: -94px;
-    transform: transparenty(-50%);
-}
-/* применить стили для социальных иконок */
-.header__social::before {
-    display: inline-block;
-    background-image: url("../images/1header/line.png");
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-}
-/* применить стили для логотипа */
-.header__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* применить стили для кнопки в header */
-.header__content {
-    display: flex;
-    justify-content: center;
-}
-
-.header__btn {
-    width: 280px;
-    height: 70px;
-    padding-left: 30px;
-    border-radius: 35px;
-    border: none;
-    background-color: #0aa566;
-    font-size: 2.4rem;
-    color: #ffffff;
-    text-align: left;
-    position: relative;
+    &__top {
+        padding: 70px 100px 70px;
+        position: relative;
+    }
+    
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /*------------------ для кнопки-меню ---------------*/
+    &__burger-btn {
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 40px;
+    }
+    
+    &__burger-btn-icon {
+        width: 100%;
+    }
+    /* ---------------------------------------------- */
+    /* применить стили для иконок поиска и пр. */
+    &__right-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    &__personal {
+        margin-right: 130px;
+        position: relative;
+        &::after {
+            content: "";
+            height: 2px;
+            width: 48px;
+            background-color: #ffd68f;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: -94px;
+            transform: transparenty(-50%);
+        }
+    }
+    .header__social::before {
+        display: inline-block;
+        background-image: url("../images/1header/line.png");
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+    /* применить стили для логотипа */
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* применить стили для кнопки в header */
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__btn {
+        width: 280px;
+        height: 70px;
+        padding-left: 30px;
+        border-radius: 35px;
+        border: none;
+        background-color: #0aa566;
+        font-size: 2.4rem;
+        color: #ffffff;
+        text-align: left;
+        position: relative;
+    }
 }
 
 /* ------МЕДИАЗАПРОСЫ------ */
