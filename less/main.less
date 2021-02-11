@@ -1,3 +1,7 @@
+// out: ../css/main.min.css, compress: true, sourceMap: true
+
+
+
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: "MuliBold";
@@ -84,214 +88,10 @@ button {
     font-family: "MuliRegular";
 }
 
-/* -------------HEADER------------- */
-.header {
-    height: 100%;
-    background: url(../images/1header/header-bg-img.png);
-    background-position: center;
-    background-size: cover;
-    color: white;
-}
+/* -------------HEADER---------- */
 
-.header__top {
-    padding: 70px 100px 70px;
-    position: relative;
-}
-
-.header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* применить стиля для меню */
-.header__menu {
-    border: 1px solid red;
-}
-
-/*------------------ для кнопки-меню ---------------*/
-.header__burger-btn {
-    background-color: transparent;
-    border: none;
-    width: 50px;
-    height: 50px;
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 40px;
-}
-
-.header__burger-btn-icon {
-    width: 100%;
-}
-/* ---------------------------------------------- */
-
-.menu__list {
-    display: flex;
-    align-items: center;
-}
-
-/* зададим внешние отступы между li */
-.menu__item {
-    margin-right: 30px;
-}
-
-.menu__item:last-child {
-    margin-right: 0;
-}
-
-.menu__link {
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    text-align: left;
-    color: #ffffff;
-}
-
-/* применить стили для иконок поиска и пр. */
-.header__right-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.header__personal {
-    border: 1px solid red;
-    margin-right: 130px;
-    position: relative;
-}
-
-.header__personal::after {
-    content: "";
-    height: 2px;
-    width: 48px;
-    background-color: #ffd68f;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: -94px;
-    transform: transparenty(-50%);
-}
-
-.personal__list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.personal__item {
-    margin-right: 45px;
-}
-
-.personal__item:last-child {
-    margin-right: 0;
-    position: relative;
-}
-
-.personal__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.personal__cart-count {
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    font-size: 10px;
-    display: inline-block;
-    line-height: 1.8;
-    text-align: center;
-    border-radius: 50%;
-    color: black;
-    position: absolute;
-    top: -12px;
-    right: -15px;
-}
-
-/* применить стили для социальных иконок */
-.header__social {
-    border: 1px solid red;
-}
-
-.header__social::before {
-    display: inline-block;
-    background-image: url("../images/1header/line.png");
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-}
-
-.social__list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social__list-item {
-    margin-right: 10px;
-}
-
-.social__list-item:last-child {
-    margin-right: 0;
-}
-
-.social__link {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-/* применить стили для логотипа */
-.header__logo {
-    border: 1px solid red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* применить стили для кнопки в header */
-.header__content {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-}
-
-.header__btn {
-    width: 280px;
-    height: 70px;
-    padding-left: 30px;
-    border-radius: 35px;
-    border: none;
-    background-color: #0aa566;
-    font-size: 2.4rem;
-    color: #ffffff;
-    text-align: left;
-    position: relative;
-
-}
-
-.btn--bg-green::after {
-    display: inline-block;
-    content: "";
-    background-image: url(../images/ArrowRight.png);
-    background-size: cover;
-    position: absolute;
-    height: 16px;
-    width: 30px;
-    top: 30px;
-    right: 38px;
-}
-
-/* -------------SMOOTHIES------------- */
+/* -------------SMOOTHIES---------- */
 .smoothies {
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -362,16 +162,14 @@ button {
     text-align: center;
 }
 
-/* -------------ABOUT------------- */
+/* -------------ABOUT---------- */
 .about {
     background-color: #14826f;
-    border: 1px solid red;
     display: flex;
     justify-content: left;
 }
 
 .about__box-image {
-    border: 1px solid rgb(117, 0, 128);
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -384,7 +182,6 @@ button {
 }
 
 .about__box-list {
-    border: 1px solid red;
     margin-top: 100px;
     margin-left: 140px;
 }
@@ -461,9 +258,8 @@ button {
     transform: translateY(30%);
 }
 
-/* -------------PRODUCTS------------- */
+/* -------------PRODUCTS---------- */
 .products {
-    border: 1px solid blue;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
@@ -540,9 +336,8 @@ button {
     transform: translateY(-50%);
 }
 
-/* -------------STORY------------- */
+/* -------------STORY---------- */
 .story {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -561,7 +356,6 @@ button {
 }
 
 .story__card {
-    border: 1px solid blue;
     padding-bottom: 290px;
     width: 520px;
 }
@@ -609,7 +403,6 @@ button {
 }
 
 .story__image {
-    border: 1px solid blue;
     position: relative;
     padding-top: 120px;
 }
@@ -631,9 +424,8 @@ button {
     left: -30%;
 }
 
-/* -------------TESTIMONIALS------------- */
+/* -------------TESTIMONIALS---------- */
 .testimonials {
-    border: 1px solid blue;
     background-color: #672f1b;
 }
 
@@ -723,9 +515,8 @@ button {
     transform: rotate(180deg);
 }
 
-/* -------------BLOG------------- */
+/* -------------BLOG---------- */
 .blog {
-    border: 1px solid red;
     min-height: 800px;
     display: flex;
     justify-content: center;
@@ -813,9 +604,8 @@ button {
     transform: translateY(25%);
 }
 
-/* -------------INSTAGRAM------------- */
+/* -------------INSTAGRAM---------- */
 .instagram {
-    border: 1px solid blue;
     padding-bottom: 10px;
     padding-right: 0;
     margin-right: 0;
@@ -874,11 +664,7 @@ button {
     right: 20px;
 }
 
-/* -------------FOOTER------------- */
-.footer {
-    border: 1px solid red;
-}
-
+/* -------------FOOTER---------- */
 .footer__wrapper {
     background-color: #f6ab3b;
     display: flex;
@@ -887,7 +673,6 @@ button {
 }
 
 .footer__logo {
-    border: 1px solid blue;
     padding: 130px 0 170px 100px;
     margin-right: 280px;
 }
@@ -900,7 +685,6 @@ button {
 }
 
 .footer__information {
-    border: 1px solid blue;
     margin-right: 152px;
 }
 
@@ -922,7 +706,6 @@ button {
 }
 
 .footer__pay-system {
-    border: 1px solid blue;
     margin-right: 170px;
 }
 
@@ -940,15 +723,14 @@ button {
 }
 
 .footer__email {
-    border: 1px solid blue;
     position: relative;
 }
 
 .footer__input {
-    border: 1px solid blue;
     width: 495px;
     height: 60px;
     border-radius: 30px;
+    border: #f7ae3b;
     background-color: white;
     padding-left: 68px;
     background-image: url(../images/9footer/FooterImput-Icon.png);
@@ -964,7 +746,6 @@ input::placeholder {
 }
 
 .footer__btn {
-    border: 1px solid blue;
     width: 150px;
     height: 30px;
     font-family: "MuliExtraBold";
@@ -998,7 +779,6 @@ input::placeholder {
 }
 
 .footer__social-links {
-    border: 1px solid blue;
     width: 150px;
     height: 30px;
     display: flex;
@@ -1016,7 +796,6 @@ input::placeholder {
 }
 
 .footer__copyright {
-    border: 1px solid rgb(29, 250, 9);
     font-size: 1.3rem;
     line-height: 3;
     color: #af8a82;
@@ -1030,7 +809,6 @@ input::placeholder {
 }
 
 .footer__btn-go-up {
-    border: 1px solid rgb(29, 250, 9);
     font-family: "MuliBold";
     font-size: 1.6rem;
     line-height: 2.5;
@@ -1045,6 +823,7 @@ input::placeholder {
     height: 50px;
     border-radius: 5px;
     background-color: #f2662f;
+    border: none;
     position: absolute;
     top: -125%;
     right: 100px;
@@ -1174,11 +953,11 @@ input::placeholder {
     #menu__toggle:checked~.menu__list {
         visibility: visible;
     }
-    /* ------------------------------------------ */
+    /* -------------------------------- */
     .header__logo {
         left: 25%;
     }
-    /* <!--  -------------ABOUT-------------  --> */
+    /*  -------------ABOUT----------  */
     .about {
         justify-content: space-around;
     }
@@ -1203,7 +982,7 @@ input::placeholder {
         font-size: 2.5rem;
     }
 
-    /* -------------BLOG------------- */
+    /* -------------BLOG---------- */
     .blog {
     padding: 0 30px 0 30px;
     }
@@ -1236,7 +1015,7 @@ input::placeholder {
     html, body {
         font-size: 12px;
     }
-    /* -------------HEADER------------- */
+    /* -------------HEADER---------- */
     .header__navigation {
         justify-content: space-around;
     }
@@ -1256,13 +1035,16 @@ input::placeholder {
         margin-right: 24px;
     }
 
-    /* -------------SMOOTHIES------------- */
+    /* -------------SMOOTHIES---------- */
     .smoothies {
         padding: 20px 20px 20px 20px;
     }
 
     .smoothies__report {
         width: 100%;
+    }
+    .smoothies__title {
+        padding-top: 20px;
     }
 
     .smoothies__info-list {
@@ -1292,7 +1074,7 @@ input::placeholder {
         margin: 0;
     }
 
-    /* -------------ABOUT------------- */
+    /* -------------ABOUT---------- */
     .about {
         display: block;
         padding: 0 10px;
@@ -1328,7 +1110,7 @@ input::placeholder {
         margin-bottom: 20px;
     }
 
-    /* -------------PRODUCTS------------- */
+    /* -------------PRODUCTS---------- */
     .products {
         overflow-x: auto;
         overflow-y: hidden;
@@ -1352,7 +1134,7 @@ input::placeholder {
         width: 230px;
     }
 
-    /* -------------STORY------------- */
+    /* -------------STORY---------- */
     .story {
         flex-direction: column;
         justify-content: center;
@@ -1400,7 +1182,7 @@ input::placeholder {
     .story__image::before {
         display: none;
     }
-    /* -------------TESTIMONIALS------------- */
+    /* -------------TESTIMONIALS---------- */
     .testimonials__content {
         padding: 0 10px;
     }
@@ -1408,7 +1190,7 @@ input::placeholder {
         display: none;
     }
 
-     /* -------------BLOG------------- */
+     /* -------------BLOG---------- */
     .blog {
         flex-direction: column;
         justify-content: center;
@@ -1450,7 +1232,7 @@ input::placeholder {
         top: 0;
     }
     
-    /* -------------INSTAGRAM------------- */
+    /* -------------INSTAGRAM---------- */
     .instagram__gallery {
         overflow-x: auto;
     }
@@ -1464,7 +1246,7 @@ input::placeholder {
         margin: 10px 0 10px;
     }
     
-    /* -------------FOOTER------------- */
+    /* -------------FOOTER---------- */
     .footer__wrapper {
         flex-wrap: wrap;
         display: block;
@@ -1513,7 +1295,7 @@ input::placeholder {
         /* font-size: 20px; */
     }
 
-    /* -------------TESTIMONIALS------------- */
+    /* -------------TESTIMONIALS---------- */
     .testimonials__title {
         padding: 0px;
         margin: 20px 0 20px;
@@ -1546,7 +1328,7 @@ input::placeholder {
 
 /* ------ДОПМЕДИАЗАПРОС ДО 576px------ */
 @media screen and (max-width: 576px) {
-    /* -------------HEADER------------- */
+    /* -------------HEADER---------- */
     .menu__list {
         padding: 80px 20px;
     }
@@ -1562,7 +1344,7 @@ input::placeholder {
         margin-top: 80px;
     }
 
-    /* -------------ABOUT------------- */
+    /* -------------ABOUT---------- */
     .about__img {
         width: 340px;
         padding: 10px;
@@ -1583,7 +1365,7 @@ input::placeholder {
         height: 60px;
     }
 
-    /* -------------FOOTER------------- */
+    /* -------------FOOTER---------- */
     .footer__information, .footer__pay-system {
     margin: 0px;
     margin-bottom: 20px;
@@ -1595,12 +1377,16 @@ input::placeholder {
         left: 20px;
     }
     .footer__input {
-        width: 260px;
+        width: 280px;
         height: 60px;
     }
     .footer__social-box {
         display: block;
         margin-left: 110px;
+    }
+    input::placeholder {
+        font-size: 1.2em;
+        text-overflow: ellipsis;
     }
     .footer__copyright {
         margin-right: 130px;
@@ -1616,3 +1402,13 @@ input::placeholder {
 
 /* ------МЕДИАЗАПРОС ДЛЯ МОБИЛОЧЕК ДО 360px------ */
 @media screen and (max-width: 360px) {}
+
+
+/* ------blocks------ */
+
+@import "./blocks/_button.less";
+@import "./blocks/_header.less";
+@import "./blocks/_logo.less";
+@import "./blocks/_menu.less";
+@import "./blocks/_personal.less";
+@import "./blocks/_social.less";
