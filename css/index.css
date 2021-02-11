@@ -1440,7 +1440,7 @@ input::placeholder {
     .article__text {
         margin-top: 10px;
         padding-bottom: 50px;
-        width: 90%;
+        width: 80%;
     }
 
     .btn--text-bold::after {
@@ -1601,6 +1601,16 @@ input::placeholder {
     .footer__social-box {
         display: block;
         margin-left: 110px;
+    }
+    .footer__copyright {
+        margin-right: 130px;
+    }
+    .footer__btn-go-up {
+        top: -50px;
+        right: 76px;
+    }
+    .footer__btn-to-top {
+        right: 12px;
     }
 }
 
