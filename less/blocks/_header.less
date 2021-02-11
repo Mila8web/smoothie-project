@@ -104,3 +104,20 @@
         left: 25%;
     }
 }
+
+/* ------МЕДИАЗАПРОС ДЛЯ ПЛАНШЕТОВ ДО 992px------ */
+@media screen and (max-width: 992px) {
+    .header__navigation {
+        justify-content: space-around;
+    }
+    .header__right-wrapper {
+        flex-direction: column;
+    }
+    .header__personal {
+        margin-right: 0;
+    }
+    .header__personal::after {
+        display: none;
+    }
+}
+
