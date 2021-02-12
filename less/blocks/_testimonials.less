@@ -50,38 +50,6 @@
 }
 
 
-.title--red {
-    color: #f2612d;
-}
-.text--white {
-    font-size: 18px;
-    line-height: 2;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-.text--orange {
-    font-family: "MuliSemiBoldItalic";
-    color: #f7ae3b;
-    font-size: 18px;
-    display: block;
-    padding-top: 26px;
-    position: relative;
-    &::before {
-        position: absolute;
-        display: inline-block;
-        content: "";
-        background-image: url("../images/6testimonials/Sarah.png");
-        background-size: cover;
-        width: 764px;
-        height: 148px;
-        opacity: 2;
-        top: -194px;
-        left: -150px;
-    }
-}
-
-
 
 @media screen and (max-width: 992px) {
     html, body {
@@ -90,19 +58,13 @@
     .testimonials__content {
         padding: 0 10px;
     }
-    .text--orange::before {
-        display: none;
-    }
 }
 
-
-/* ------МЕДИАЗАПРОС ДЛЯ СМАРТФОНОВ ДО 768px------ */
 @media screen and (max-width: 768px) {
     html, body {
         /* font-size: 20px; */
     }
-
-    /* -------------TESTIMONIALS---------- */
+    
     .testimonials__title {
         padding: 0px;
         margin: 20px 0 20px;
@@ -115,12 +77,6 @@
     .testimonials__feedback {
         margin-right: 0px;
         width: 80%;
-    }
-
-    .text--white,
-    .text--orange {
-        font-size: 22px;
-        line-height: 1.5;
     }
 
     .testimonials__buttons {

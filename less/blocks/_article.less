@@ -1,35 +1,37 @@
 //main: ./../main.less
 
 // blog
-.article__title {
-    font-size: 3.0rem;
-    line-height: 1;
-    text-align: left;
-    color: #f2612d;
-    margin-top: 330px;
-    position: relative;
-    &::before {
-        position: absolute;
-        display: block;
-        content: "";
-        width: 686px;
-        height: 14px;
-        background-image: url(../images/7blog/Line.png);
-        background-size: cover;
-        border-radius: 35px;
-        top: -50px;
-        left: -104px;
+.article{
+    &__title {
+        font-size: 3.0rem;
+        line-height: 1;
+        text-align: left;
+        color: #f2612d;
+        margin-top: 330px;
+        position: relative;
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 686px;
+            height: 14px;
+            background-image: url(../images/7blog/Line.png);
+            background-size: cover;
+            border-radius: 35px;
+            top: -50px;
+            left: -104px;
+        }
+    }
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2;
+        text-align: left;
+        color: #1e1e1e;
+        margin: 40px 0 0 60px;
+        max-width: 472px;
     }
 }
 
-.article__text {
-    font-size: 1.8rem;
-    line-height: 2;
-    text-align: left;
-    color: #1e1e1e;
-    margin: 40px 0 0 60px;
-    max-width: 472px;
-}
 
 
 @media screen and (max-width: 1500px) {

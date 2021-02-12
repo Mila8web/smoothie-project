@@ -1,0 +1,54 @@
+//main: ./../main.less
+
+
+// about
+.text--bold {
+    font-weight: bold;
+}
+// testimonials
+
+.text--white {
+    font-size: 18px;
+    line-height: 2;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.text--orange {
+    font-family: "MuliSemiBoldItalic";
+    color: #f7ae3b;
+    font-size: 18px;
+    display: block;
+    padding-top: 26px;
+    position: relative;
+    &::before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        background-image: url("../images/6testimonials/Sarah.png");
+        background-size: cover;
+        width: 764px;
+        height: 148px;
+        opacity: 2;
+        top: -194px;
+        left: -150px;
+    }
+}
+
+// testimonials
+@media screen and (max-width: 992px) {
+    html, body {
+        font-size: 12px;
+    }
+    .text--orange::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text--white,
+    .text--orange {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}

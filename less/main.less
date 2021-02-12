@@ -1,7 +1,6 @@
 // out: ../css/main.min.css, compress: true, sourceMap: true
 
 
-
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: "MuliBold";
@@ -61,7 +60,7 @@ body {
 }
 
 
-/* Для всех одинаковые стили тегам */
+/* Для всех одинаковые стили: тегам */
 li {
     list-style: none;
     text-decoration: none;
@@ -79,7 +78,7 @@ button {
     background-color: #0aa566;
 }
 
-/* классам */
+/* Для всех одинаковые стили: классам */
 .title {
     font-family: "MuliExtraBold";
 }
@@ -89,302 +88,24 @@ button {
 }
 
 
-/* -------------FOOTER---------- */
-.footer__wrapper {
-    background-color: #f6ab3b;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.footer__logo {
-    padding: 130px 0 170px 100px;
-    margin-right: 280px;
-}
-
-.footer__right-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 80px 0;
-}
-
-.footer__information {
-    margin-right: 152px;
-}
-
-.footer__title {
-    max-height: 20px;
-    font-size: 2.6rem;
-    line-height: 1.5;
-    text-align: left;
-    color: white;
-    margin-bottom: 44px;
-}
-
-.footer__item-link {
-    font-size: 1.8rem;
-    line-height: 2;
-    letter-spacing: -0.36px;
-    text-align: left;
-    color: #6d450c;
-}
-
-.footer__pay-system {
-    margin-right: 170px;
-}
-
-.pay__box-images {
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer__img-payments {
-    margin-right: 16px;
-}
-
-.footer__email {
-    position: relative;
-}
-
-.footer__input {
-    width: 495px;
-    height: 60px;
-    border-radius: 30px;
-    border: #f7ae3b;
-    background-color: white;
-    padding-left: 68px;
-    background-image: url(../images/9footer/FooterImput-Icon.png);
-    background-repeat: no-repeat;
-    background-position: 30px center;
-}
-
-input::placeholder {
-    font-family: "MuliBold";
-    font-size: 1.7rem;
-    color: #6d450c;
-    position: relative;
-}
-
-.footer__btn {
-    width: 150px;
-    height: 30px;
-    font-family: "MuliExtraBold";
-    font-size: 1.7rem;
-    line-height: 2.06;
-    letter-spacing: -0.34px;
-    color: #6d450c;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.footer__email::before {
-    position: absolute;
-    display: block;
-    content: "";
-    background-image: url(../images/9footer/FooterImput-Arrow.png);
-    background-size: cover;
-    width: 48px;
-    height: 43px;
-    top: 136px;
-    left: 120px;
-}
-
-.footer__social-box {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-left: 186px;
-    margin-top: 30px;
-}
-
-.footer__social-links {
-    width: 150px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.footer__social-link {
-    margin-right: 20px;
-}
-
-.footer__basement {
-    background-color: #6c2c1c;
-    min-height: 60px;
-    width: 100%;
-}
-
-.footer__copyright {
-    font-size: 1.3rem;
-    line-height: 3;
-    color: #af8a82;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__basement-right {
-    position: relative;
-}
-
-.footer__btn-go-up {
-    font-family: "MuliBold";
-    font-size: 1.6rem;
-    line-height: 2.5;
-    color: white;
-    position: absolute;
-    top: -42px;
-    right: 164px;
-}
-
-.footer__btn-to-top {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #f2662f;
-    border: none;
-    position: absolute;
-    top: -125%;
-    right: 100px;
-    transform: translateY(-125%);
-    background-image: url(../images/9footer/goTopArrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* -------------Здесь будут медиа запросы------------- */
-
-/* ------ДОПМЕДИАЗАПРОС ДО 1850px------ */
-@media screen and (max-width: 1850px) {
-    .footer__wrapper {
-        justify-content: space-around;
-    }
-    .footer__logo {
-        margin: auto;
-    }
-    .footer__right-box {
-        padding: 60px 0;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .footer__information,
-    .footer__pay-system {
-        margin: 0 10% 5%;
-    }
-}
-
-
-
-
-/* ------МЕДИАЗАПРОС ДЛЯ ПЛАНШЕТОВ ДО 992px------ */
-@media screen and (max-width: 992px) {
-    html, body {
-        font-size: 12px;
-    }
-    /* -------------FOOTER---------- */
-    .footer__wrapper {
-        flex-wrap: wrap;
-        display: block;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .footer__logo {
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .footer__right-box {
-        padding: 0px;
-        flex-wrap: wrap;
-    }
-
-    .footer__information {
-        margin-right: 0px;
-        flex-basis: 50%;
-        margin-bottom: 30px;
-    }
-
-    .footer__pay-system {
-        margin-right: 0;
-        flex-basis: 50%;
-        margin-bottom: 30px;
-    }
-
-    .footer__email {
-        flex-basis: 100%;
-    }
-
-    .footer__copyright {
-        margin-right: 150px;
-    }
-}
-
-
-
-/* ------ДОПМЕДИАЗАПРОС ДО 576px------ */
-@media screen and (max-width: 576px) {
-
-    /* -------------FOOTER---------- */
-    .footer__information, .footer__pay-system {
-    margin: 0px;
-    margin-bottom: 20px;
-    }
-    .footer__email {
-        flex-basis: auto;
-    }
-    .footer__email::before {
-        left: 20px;
-    }
-    .footer__input {
-        width: 280px;
-        height: 60px;
-    }
-    .footer__social-box {
-        display: block;
-        margin-left: 110px;
-    }
-    input::placeholder {
-        font-size: 1.2em;
-        text-overflow: ellipsis;
-    }
-    .footer__copyright {
-        margin-right: 130px;
-    }
-    .footer__btn-go-up {
-        top: -50px;
-        right: 76px;
-    }
-    .footer__btn-to-top {
-        right: 12px;
-    }
-}
-
-
 /* ------blocks------ */
-
+@import "./blocks/_about.less";
+@import "./blocks/_article.less";
+@import "./blocks/_blog.less";
 @import "./blocks/_button.less";
+@import "./blocks/_footer.less";
 @import "./blocks/_header.less";
+@import "./blocks/_instagram.less";
 @import "./blocks/_logo.less";
 @import "./blocks/_menu.less";
 @import "./blocks/_personal.less";
-@import "./blocks/_social.less";
-@import "./blocks/_smoothies.less";
-@import "./blocks/_about.less";
 @import "./blocks/_products.less";
+@import "./blocks/_smoothies.less";
+@import "./blocks/_social.less";
 @import "./blocks/_story.less";
 @import "./blocks/_testimonials.less";
-@import "./blocks/_blog.less";
-@import "./blocks/_article.less";
-@import "./blocks/_instagram.less";
+@import "./blocks/_text.less";
+@import "./blocks/_title.less";
+
 
 
