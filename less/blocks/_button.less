@@ -1,6 +1,6 @@
 //main: ./../main.less
 
-
+// header
 .btn--bg-green::after {
     display: inline-block;
     content: "";
@@ -11,4 +11,37 @@
     width: 30px;
     top: 30px;
     right: 38px;
+}
+
+// blog
+.btn--text-bold {
+    font-weight: 800;
+    font-size: 1.8rem;
+    font-family: "MuliExtraBoldItalic";
+    position: relative;
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 18px;
+        height: 10px;
+        background-image: url(../images/7blog/blogArrow.png);
+        background-size: cover;
+        top: 25%;
+        left: 100px;
+        transform: translateY(25%);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    html, body {
+        font-size: 12px;
+    }
+    .btn--text-bold::after {
+        left: 110px;
+        width: 29px;
+        height: 16px;
+        top: 0;
+    }
 }

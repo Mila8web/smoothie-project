@@ -1,0 +1,63 @@
+//main: ./../main.less
+
+.blog {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    &__title {
+        font-size: 5.0rem;
+        line-height: 1;
+        text-align: left;
+        color: #f7ae3b;
+        padding: 100px 0px 50px 0px;
+    }
+    &__img {
+        position: relative;
+        z-index: 1;
+    }
+    &__article {
+        margin-left: 60px;
+    }
+    &__date {
+        width: 94px;
+        height: 14px;
+        font-size: 1.6rem;
+        line-height: 2;
+        text-align: left;
+        color: #1e1e1e;
+        font-family: "MuliRegular"
+    }
+    &__link {
+        color: #1e1e1e;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .blog {
+    padding: 0 30px 0 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html, body {
+        font-size: 12px;
+    }
+    .blog {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog__article {
+        margin-left: 0px;
+    }
+    .blog__title {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .blog__img {
+        width: 100%;
+        padding: 10px;
+    }
+}

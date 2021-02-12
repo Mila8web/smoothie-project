@@ -90,97 +90,6 @@ button {
 
 
 
-
-
-/* -------------BLOG---------- */
-.blog {
-    min-height: 800px;
-    display: flex;
-    justify-content: center;
-}
-
-.blog__title {
-    font-size: 5.0rem;
-    line-height: 1;
-    text-align: left;
-    color: #f7ae3b;
-    padding: 100px 0px 50px 0px;
-}
-
-.blog__img {
-    position: relative;
-    z-index: 1;
-}
-
-.blog__article {
-    margin-left: 60px;
-}
-
-.article__title {
-    font-size: 3.0rem;
-    line-height: 1;
-    text-align: left;
-    color: #f2612d;
-    margin-top: 330px;
-    position: relative;
-}
-
-.article__title::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 686px;
-    height: 14px;
-    background-image: url(../images/7blog/Line.png);
-    background-size: cover;
-    border-radius: 35px;
-    top: -50px;
-    left: -104px;
-}
-
-.blog__date {
-    width: 94px;
-    height: 14px;
-    font-size: 1.6rem;
-    line-height: 2;
-    text-align: left;
-    color: #1e1e1e;
-    font-family: "MuliRegular"
-}
-
-.article__text {
-    font-size: 1.8rem;
-    line-height: 2;
-    text-align: left;
-    color: #1e1e1e;
-    margin: 40px 0 0 60px;
-    max-width: 472px;
-}
-
-.blog__link {
-    color: #1e1e1e;
-}
-
-.btn--text-bold {
-    font-weight: 800;
-    font-size: 1.8rem;
-    font-family: "MuliExtraBoldItalic";
-    position: relative;
-}
-
-.btn--text-bold::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 18px;
-    height: 10px;
-    background-image: url(../images/7blog/blogArrow.png);
-    background-size: cover;
-    top: 25%;
-    left: 100px;
-    transform: translateY(25%);
-}
-
 /* -------------INSTAGRAM---------- */
 .instagram {
     padding-bottom: 10px;
@@ -431,16 +340,7 @@ input::placeholder {
     }
 }
 
-/* ------ДОПМЕДИАЗАПРОС ДО 1500px------ */
-@media screen and (max-width: 1500px) {
-    /* -------------BLOG---------- */
-    .blog {
-    padding: 0 30px 0 30px;
-    }
-    .article__title::before {
-    left: -490px;
-    }
-}
+
 
 
 /* ------МЕДИАЗАПРОС ДЛЯ ПЛАНШЕТОВ ДО 992px------ */
@@ -448,48 +348,6 @@ input::placeholder {
     html, body {
         font-size: 12px;
     }
-     /* -------------BLOG---------- */
-    .blog {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blog__article {
-        margin-left: 0px;
-    }
-
-    .blog__title {
-        text-align: center;
-        padding-top: 50px;
-    }
-
-    .article__title {
-        margin-top: 50px;
-    }
-
-    .blog__img {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .article__title::before {
-        display: none;
-    }
-
-    .article__text {
-        margin-top: 10px;
-        padding-bottom: 50px;
-        width: 80%;
-    }
-
-    .btn--text-bold::after {
-        left: 110px;
-        width: 29px;
-        height: 16px;
-        top: 0;
-    }
-    
     /* -------------INSTAGRAM---------- */
     .instagram__gallery {
         overflow-x: auto;
@@ -547,8 +405,6 @@ input::placeholder {
 }
 
 
-/* ------МЕДИАЗАПРОС ДЛЯ СМАРТФОНОВ ДО 768px------ */
-@media screen and (max-width: 768px) {}
 
 /* ------ДОПМЕДИАЗАПРОС ДО 576px------ */
 @media screen and (max-width: 576px) {
@@ -602,5 +458,7 @@ input::placeholder {
 @import "./blocks/_products.less";
 @import "./blocks/_story.less";
 @import "./blocks/_testimonials.less";
+@import "./blocks/_blog.less";
+@import "./blocks/_article.less";
 
 
