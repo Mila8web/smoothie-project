@@ -1,48 +1,7 @@
 // out: ../css/main.min.css, compress: true, sourceMap: true
 @import "./vars.less";
+@import "./fonts.less";
 
-/* Здесь подключаем шрифты, используя правило @font-face*/
-@font-face {
-    font-family: "MuliBold";
-    src: url(./../assets/fonts/Muli-Bold.ttf);
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: "MuliBoldItalic";
-    src: url(./../assets/fonts/Muli-BoldItalic.ttf);
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: "MuliExtraBold";
-    src: url(./../assets/fonts/Muli-ExtraBold.woff);
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: "MuliItalic";
-    src: url(./../assets/fonts/Muli-Italic.ttf);
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: "MuliRegular";
-    src: url(./../assets/fonts/Muli-Regular.woff);
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: "MuliSemiBoldItalic";
-    src: url(./../assets/fonts/Muli-Semi-BoldItalic.ttf);
-    font-style: normal;
-    font-stretch: normal;
-}
 
 /* Общие стили */
 * {
@@ -56,7 +15,7 @@ body {
     font-family: "MuliRegular", sans-serif;
     margin: 0;
     height: 100vh;
-    font-size: 10px;
+    font-size: @baseFontSize;
 }
 
 
