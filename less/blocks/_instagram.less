@@ -1,0 +1,82 @@
+//main: ./../main.less
+
+.instagram {
+    padding-bottom: 10px;
+    padding-right: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__social-link {
+        margin-bottom: 50px;
+        font-family: "MuliExtraBold";
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 2;
+        color: #0aa566;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: "";
+            background-image: url(../images/8instagram/Instagram-Icon.png);
+            background-size: cover;
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            bottom: 10px;
+            left: -38px;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-wrap {
+        position: relative;
+        flex: 0 1 20%;
+        object-fit: cover;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/8instagram/FotoIcon.png);
+            background-size: cover;
+            width: 26px;
+            height: 26px;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .instagram__gallery {
+        overflow-x: auto;
+    }
+
+    .instagram__img-wrap {
+        flex: 1 0 70%;
+        height: auto;
+    }
+
+    .instagram__social-link {
+        margin: 10px 0 10px;
+    }
+}
