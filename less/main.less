@@ -91,94 +91,6 @@ button {
 
 
 
-/* -------------STORY---------- */
-.story {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-}
-
-.story::after {
-    display: inline-block;
-    content: "";
-    background-image: url(../images/5story/Dots.png);
-    background-size: cover;
-    width: 410px;
-    height: 300px;
-    position: absolute;
-    bottom: -230px;
-    right: 58px;
-}
-
-.story__card {
-    padding-bottom: 290px;
-    width: 520px;
-}
-
-.story__title--yellow {
-    font-family: "MuliExtraBold", sans-serif;
-    font-size: 5.0rem;
-    color: #f7ae3b;
-    margin: 266px 0px 42px 0px;
-}
-
-.story__text {
-    font-size: 1.8rem;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e1e1e;
-    margin-bottom: 60px;
-}
-
-.story__btn {
-    width: 301px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: #0aa566;
-    font-family: "MuliExtraBold", sans-serif;
-    font-size: 2.1rem;
-    color: #ffffff;
-    padding-left: 40px;
-    border: none;
-    text-align: start;
-    position: relative;
-}
-
-.story__btn::after {
-    display: inline-block;
-    content: "";
-    background-image: url(../images/ArrowRight.png);
-    background-size: cover;
-    position: absolute;
-    height: 16px;
-    width: 30px;
-    top: 24px;
-    right: 38px;
-}
-
-.story__image {
-    position: relative;
-    padding-top: 120px;
-}
-
-.story__img {
-    width: 586px;
-    height: 602px;
-}
-
-.story__image::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    background-image: url(../images/5story/Story-Stamp.png);
-    background-size: cover;
-    width: 290px;
-    height: 216px;
-    top: 15%;
-    left: -30%;
-}
-
 /* -------------TESTIMONIALS---------- */
 .testimonials {
     background-color: #672f1b;
@@ -626,54 +538,6 @@ input::placeholder {
     html, body {
         font-size: 12px;
     }
-    /* -------------STORY---------- */
-    .story {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .story::after {
-        display: none;
-    }
-
-    .story__card {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .story__title--yellow {
-        margin: 0;
-        margin-bottom: 40px;
-    }
-
-    .story__text {
-        line-height: 1.5;
-        font-size: 2.5rem;
-    }
-
-    .story__btn {
-        font-size: 2.5rem;
-    }
-
-    .story__image {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .story__img {
-        width: 90%;
-        height: 90%;
-        padding: 10px;
-    }
-
-    .story__image::before {
-        display: none;
-    }
     /* -------------TESTIMONIALS---------- */
     .testimonials__content {
         padding: 0 10px;
@@ -868,5 +732,6 @@ input::placeholder {
 @import "./blocks/_smoothies.less";
 @import "./blocks/_about.less";
 @import "./blocks/_products.less";
+@import "./blocks/_story.less";
 
 
