@@ -1,0 +1,114 @@
+//main: ./../main.less
+
+.smoothies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 870px;
+    &__report {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 5.0rem;
+        line-height: 1;
+        color: #f7ae3b;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2;
+        color: #1e1e1e;
+        max-width: 910px;
+        margin: 56px 0 60px;
+    }
+    
+    &__info-list {
+        max-width: 1016px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    &__list-item {
+        color: #f2612d;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 195px;
+        flex: 0 1 25%;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            border-bottom: 2px solid #f6edde;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7) {
+            border-right: 2px solid #f6edde;
+        }
+    }
+}
+
+.smoothies-info__title {
+    margin: 20px 30px 20px 30px;
+    font-family: "MuliExtraBold", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    html, body {
+        font-size: 12px;
+    }
+    .smoothies {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .smoothies__report {
+        width: 100%;
+    }
+    .smoothies__title {
+        padding-top: 20px;
+    }
+
+    .smoothies__info-list {
+        width: 100%;
+        justify-content: none;
+    }
+
+    .smoothies__list-item {
+        flex: 0 1 50%;
+    }
+
+    .smoothies__list-item:nth-child(2),
+    .smoothies__list-item:nth-child(6) {
+        border-right: none;
+    }
+
+    .smoothies__list-item:nth-child(5),
+    .smoothies__list-item:nth-child(6) {
+        border-bottom: 2px solid #f6edde;
+    }
+
+    .smoothies__img {
+        padding-bottom: 20px;
+    }
+
+    .smoothies-info__title {
+        margin: 0;
+    }
+}
