@@ -32,20 +32,20 @@
     &__btn-link-arrow {
         padding: 80px 100px 0 0;
         position: relative;
-    }
-    &__btn-link-arrow::before {
-        display: inline-block;
-        content: "";
-        width: 30px;
-        height: 16px;
-        background-image: url(../images/ArrowLeft.png);
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: -24px;
-    }
-    &__btn-link-arrow:last-child::before {
-        transform: rotate(180deg);
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 30px;
+            height: 16px;
+            background-image: url(../images/ArrowLeft.png);
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: -24px;
+        }
+        &:last-child::before {
+            transform: rotate(180deg);
+        }
     }
 }
 
