@@ -11,14 +11,14 @@
         padding: 70px 100px 70px;
         position: relative;
     }
-    
+
     &__navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
-    
+
     /*------------------ для кнопки-меню ---------------*/
     &__burger-btn {
         background-color: transparent;
@@ -30,10 +30,11 @@
         top: 20px;
         right: 40px;
     }
-    
+
     &__burger-btn-icon {
         width: 100%;
     }
+
     /* ---------------------------------------------- */
 
     /* применить стили для иконок поиска и пр. */
@@ -42,10 +43,11 @@
         align-items: center;
         justify-content: flex-end;
     }
-    
+
     &__personal {
         margin-right: 130px;
         position: relative;
+
         &::after {
             content: "";
             height: 2px;
@@ -58,6 +60,7 @@
             transform: transparenty(-50%);
         }
     }
+
     .header__social::before {
         display: inline-block;
         background-image: url("../images/1header/line.png");
@@ -65,6 +68,7 @@
         width: 20px;
         height: 20px;
     }
+
     /* применить стили для логотипа */
     &__logo {
         position: absolute;
@@ -72,13 +76,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     /* применить стили для кнопки в header */
     &__content {
         display: flex;
         justify-content: center;
     }
-    
+
     &__btn {
         width: 280px;
         height: 70px;
@@ -89,36 +93,5 @@
         line-height: 1.67;
         text-align: left;
         position: relative;
-    }
-}
-
-
-@media screen and (max-width: 1500px) {
-    .header__menu {
-        border: none;
-    }
-    .header__logo {
-        left: 25%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .header__navigation {
-        justify-content: space-around;
-    }
-    .header__right-wrapper {
-        flex-direction: column;
-    }
-    .header__personal {
-        margin-right: 0;
-    }
-    .header__personal::after {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .header__logo {
-        left: 35%;
     }
 }

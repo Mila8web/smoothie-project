@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+
     .story::after {
         display: inline-block;
         content: "";
@@ -16,18 +17,22 @@
         bottom: -230px;
         right: 58px;
     }
+
     &__card {
         padding-bottom: 290px;
         width: 520px;
     }
+
     &__title--yellow {
         color: @secondaryTitleColor;
         margin: 266px 0px 42px 0px;
     }
+
     &__text {
         text-align: left;
         margin-bottom: 60px;
     }
+
     &__btn {
         width: 301px;
         height: 60px;
@@ -35,6 +40,7 @@
         border: none;
         text-align: start;
         position: relative;
+
         &::after {
             display: inline-block;
             content: "";
@@ -47,9 +53,11 @@
             right: 38px;
         }
     }
+
     &__image {
         position: relative;
         padding-top: 120px;
+
         &::before {
             position: absolute;
             display: inline-block;
@@ -62,64 +70,9 @@
             left: -30%;
         }
     }
+
     &__img {
         width: 586px;
         height: 602px;
-    }
-}
-
-
-@media screen and (max-width: 992px) {
-    // html, body {
-    //     font-size: 15px;
-    // }
-    .story {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .story::after {
-        display: none;
-    }
-
-    .story__card {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .story__title--yellow {
-        margin: 0;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .story__text {
-        line-height: 1.5;
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .story__btn {
-        font-size: 2.2rem;
-    }
-
-    .story__image {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .story__img {
-        width: 90%;
-        height: 90%;
-        padding: 10px;
-    }
-
-    .story__image::before {
-        display: none;
     }
 }
