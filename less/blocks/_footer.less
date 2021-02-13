@@ -7,32 +7,31 @@
         justify-content: start;
         align-items: center;
     }
-    
+
     &__logo {
         padding: 130px 0 170px 100px;
         margin-right: 280px;
     }
-    
+
     &__right-box {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 80px 0;
     }
-    
+
     &__information {
         margin-right: 152px;
     }
-    
+
     &__title {
         max-height: 20px;
         font-size: 2.6rem;
         line-height: 1.5;
         text-align: left;
-        color: white;
         margin-bottom: 44px;
     }
-    
+
     &__item-link {
         font-size: 1.8rem;
         line-height: 2;
@@ -40,16 +39,18 @@
         text-align: left;
         color: #6d450c;
     }
-    
+
     &__pay-system {
         margin-right: 170px;
     }
+
     &__img-payments {
         margin-right: 16px;
     }
-    
+
     &__email {
         position: relative;
+
         &::before {
             position: absolute;
             display: block;
@@ -62,7 +63,7 @@
             left: 120px;
         }
     }
-    
+
     &__input {
         width: 495px;
         height: 60px;
@@ -74,6 +75,7 @@
         background-repeat: no-repeat;
         background-position: 30px center;
     }
+
     &__btn {
         width: 150px;
         height: 30px;
@@ -86,7 +88,7 @@
         align-items: center;
         position: relative;
     }
-    
+
     &__social-box {
         display: flex;
         flex-direction: row;
@@ -94,24 +96,24 @@
         margin-left: 186px;
         margin-top: 30px;
     }
-    
+
     &__social-links {
         width: 150px;
         height: 30px;
         display: flex;
         align-items: center;
     }
-    
+
     &__social-link {
         margin-right: 20px;
     }
-    
+
     &__basement {
         background-color: #6c2c1c;
         min-height: 60px;
         width: 100%;
     }
-    
+
     &__copyright {
         font-size: 1.3rem;
         line-height: 3;
@@ -120,11 +122,11 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     &__basement-right {
         position: relative;
     }
-    
+
     &__btn-go-up {
         font-family: "MuliBold";
         font-size: 1.6rem;
@@ -134,7 +136,7 @@
         top: -30px;
         right: 160px;
     }
-    
+
     &__btn-to-top {
         width: 50px;
         height: 50px;
@@ -172,14 +174,17 @@ input::placeholder {
     .footer__wrapper {
         justify-content: space-around;
     }
+
     .footer__logo {
         margin: auto;
     }
+
     .footer__right-box {
         padding: 60px 0;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     .footer__information,
     .footer__pay-system {
         margin: 0 10% 5%;
@@ -188,9 +193,12 @@ input::placeholder {
 
 
 @media screen and (max-width: 992px) {
-    html, body {
+
+    html,
+    body {
         font-size: 12px;
     }
+
     .footer__wrapper {
         flex-wrap: wrap;
         display: block;
@@ -210,63 +218,78 @@ input::placeholder {
         padding: 0px;
         flex-wrap: wrap;
     }
+
     .footer__information {
         margin-right: 0px;
         flex-basis: 50%;
         margin-bottom: 30px;
     }
+
     .footer__pay-system {
         margin-right: 0;
         flex-basis: 50%;
         margin-bottom: 30px;
     }
+
     .footer__email {
         flex-basis: 100%;
         padding: 0 30px;
     }
+
     .footer__copyright {
         margin-right: 150px;
     }
+
     .footer__btn-go-up {
         right: 130px;
         top: -50px;
     }
+
     .footer__btn-to-top {
         right: 50px;
     }
 }
 
-/* ------ДОПМЕДИАЗАПРОС ДО 576px------ */
 @media screen and (max-width: 576px) {
-    .footer__information, .footer__pay-system {
-    margin: 0px;
-    margin-bottom: 20px;
+
+    .footer__information,
+    .footer__pay-system {
+        margin: 0px;
+        margin-bottom: 20px;
     }
+
     .footer__email {
         flex-basis: auto;
     }
+
     .footer__email::before {
         left: 20px;
     }
+
     .footer__input {
-        width: 280px;
+        width: 300px;
         height: 60px;
     }
+
     .footer__social-box {
         display: block;
         margin-left: 110px;
     }
+
     input::placeholder {
         font-size: 1.2em;
         text-overflow: ellipsis;
     }
+
     .footer__copyright {
         margin-right: 130px;
     }
+
     .footer__btn-go-up {
         top: -50px;
         right: 76px;
     }
+
     .footer__btn-to-top {
         right: 12px;
     }

@@ -47,8 +47,7 @@
     &__btn {
         width: 380px;
         height: 60px;
-        border-radius: 30px;
-        border: solid 2px #f8b231;
+        border-color: #f8b231;
         background-color: transparent;
         text-align: left;
         padding-left: 25px;
@@ -92,6 +91,9 @@
 }
 
 @media screen and (max-width: 1500px) {
+    html, body {
+        font-size: 12px;
+    }
     .about {
         justify-content: space-around;
     }
@@ -102,31 +104,29 @@
         width: 100%;
     }
 
+    .title--green::after {
+        width: 350px;
+        height: 9px;
+    }
+
     .about__box-list {
         margin-left: 0;
         padding: 20px 10px;
     }
 
-    .about__list-item,
-    .about__btn {
-        font-size: 2.5rem;
+    .about__list-item {
+        font-size: 1.7rem;
     }
 
-    .title--white {
-        font-size: 4.5rem;
-    }
-    .title--green::after {
-        width: 350px;
-        height: 9px;
+    .about__btn {
+        width: 410px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    html,
-    body {
-        font-size: 12px;
+    html, body {
+        font-size: 13px;
     }
-
     .about {
         display: block;
         padding: 0 10px;
@@ -169,20 +169,17 @@
         padding: 10px;
     }
 
-    .about__list-item,
-    .about__btn {
-        font-size: 2rem;
+    .title--white {
+        font-size: 3.5rem;
     }
 
-    .title--white {
-        font-size: 3rem;
-    }
     .title--green::after {
         display: none;
     }
 
     .about__btn {
-        width: 310px;
+        width: 316px;
         height: 60px;
+        font-size: 1.3rem;
     }
 }

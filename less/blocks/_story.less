@@ -21,17 +21,11 @@
         width: 520px;
     }
     &__title--yellow {
-        font-family: "MuliExtraBold", sans-serif;
-        font-size: 5.0rem;
-        color: #f7ae3b;
+        color: @secondaryTitleColor;
         margin: 266px 0px 42px 0px;
     }
     &__text {
-        font-size: 1.8rem;
-        line-height: 2;
-        letter-spacing: normal;
         text-align: left;
-        color: w#1e1e1e;
         margin-bottom: 60px;
     }
     &__btn {
@@ -76,9 +70,9 @@
 
 
 @media screen and (max-width: 992px) {
-    html, body {
-        font-size: 12px;
-    }
+    // html, body {
+    //     font-size: 15px;
+    // }
     .story {
         flex-direction: column;
         justify-content: center;
@@ -100,15 +94,17 @@
     .story__title--yellow {
         margin: 0;
         margin-bottom: 40px;
+        text-align: center;
     }
 
     .story__text {
         line-height: 1.5;
         font-size: 2.5rem;
+        text-align: center;
     }
 
     .story__btn {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .story__image {

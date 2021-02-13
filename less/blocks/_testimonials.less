@@ -5,9 +5,8 @@
     background-color: #672f1b;
 
     &__title {
-        font-size: 50px;
         text-align: center;
-        color: #f7ae3b;
+        color: @secondaryTitleColor;
         padding-top: 120px;
         margin-bottom: 120px;
     }
@@ -58,8 +57,6 @@
 }
 
 .text--white {
-    font-size: 18px;
-    line-height: 2;
     color: white;
     position: relative;
     z-index: 1;
@@ -68,7 +65,6 @@
 .text--orange {
     font-family: "MuliSemiBoldItalic";
     color: #f7ae3b;
-    font-size: 18px;
     display: block;
     padding-top: 26px;
     position: relative;
@@ -106,7 +102,7 @@
 
 @media screen and (max-width: 768px) {
     html, body {
-        /* font-size: 20px; */
+        font-size: 14px; 
     }
     
     .testimonials__title {
@@ -125,7 +121,6 @@
 
     .text--white,
     .text--orange {
-        font-size: 22px;
         line-height: 1.5;
     }
 
