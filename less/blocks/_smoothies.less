@@ -13,17 +13,13 @@
     }
     
     &__title {
-        font-size: 5.0rem;
         line-height: 1;
-        color: #f7ae3b;
+        color: @secondaryTitleColor;
         text-align: center;
         padding-top: 100px;
     }
     
     &__text {
-        font-size: 1.8rem;
-        line-height: 2;
-        color: #1e1e1e;
         max-width: 910px;
         margin: 56px 0 60px;
     }
@@ -63,19 +59,20 @@
 
 .smoothies-info__title {
     margin: 20px 30px 20px 30px;
-    font-family: "MuliExtraBold", sans-serif;
-    font-size: 2.5rem;
+    font-size: @secondaryTitleFontSize;
     text-align: center;
+    color: #f2612d;
 }
 
 
 
 @media screen and (max-width: 992px) {
     html, body {
-        font-size: 12px;
+        font-size: @baseFontSize*2;
     }
     .smoothies {
         padding: 20px 20px 20px 20px;
+        font-size: @baseFontSize*2;
     }
 
     .smoothies__report {
