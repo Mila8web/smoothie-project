@@ -3,6 +3,7 @@
 
 .testimonials {
     background-color: #672f1b;
+
     &__title {
         font-size: 50px;
         text-align: center;
@@ -10,28 +11,34 @@
         padding-top: 120px;
         margin-bottom: 120px;
     }
+
     &__content {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     &__feedback {
         width: 460px;
         text-align: center;
         margin-right: 60px;
     }
+
     &__img {
         position: relative;
         z-index: 2;
     }
+
     &__buttons {
         display: flex;
         justify-content: center;
         padding: 120px 0 0 100px;
     }
+
     &__btn-link-arrow {
         padding: 80px 100px 0 0;
         position: relative;
+
         &::before {
             display: inline-block;
             content: "";
@@ -43,12 +50,46 @@
             top: 0;
             left: -24px;
         }
+
         &:last-child::before {
             transform: rotate(180deg);
         }
     }
 }
 
+.text--white {
+    font-size: 18px;
+    line-height: 2;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.text--orange {
+    font-family: "MuliSemiBoldItalic";
+    color: #f7ae3b;
+    font-size: 18px;
+    display: block;
+    padding-top: 26px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        background-image: url("../images/6testimonials/Sarah.png");
+        background-size: cover;
+        width: 764px;
+        height: 148px;
+        opacity: 2;
+        top: -194px;
+        left: -150px;
+    }
+}
+
+.title--red {
+    color: #f2612d;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -57,6 +98,9 @@
     }
     .testimonials__content {
         padding: 0 10px;
+    }
+    .text--orange::before {
+        display: none;
     }
 }
 
@@ -77,6 +121,12 @@
     .testimonials__feedback {
         margin-right: 0px;
         width: 80%;
+    }
+
+    .text--white,
+    .text--orange {
+        font-size: 22px;
+        line-height: 1.5;
     }
 
     .testimonials__buttons {
