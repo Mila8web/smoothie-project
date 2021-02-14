@@ -2,10 +2,22 @@
 
 
 // button
+.btn-text() {
+    color: @primaryColor;
+    font-size: @secondaryFontSize; 
+    font-family: @primaryFontFamily;
+}
+
+.btn-border(@border-color) {
+    border-width: 2px;
+    border-style: solid;
+    border-color: @border-color; 
+}
+
 .btn-hover-color (@background-color) {
         background-color: @background-color;
         border: 3px solid $color;
-        color: @tertiaryTextColor;
+        color: @secondaryTextColor;
 }
 
 .btn-focus-mixin() {
@@ -33,12 +45,6 @@
         text-shadow: @text-shadow;
         color: blueviolet;
     }
-    // &:focus {
-    //     background-color: @background-color;
-    // }
-    // &:active {
-    //     background-color: @background-color;
-    // }
 }
 
 .item-mixin-hover(@background-color) {
