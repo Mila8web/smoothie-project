@@ -1,9 +1,7 @@
 //main: ./main.less
 
-// .story__title--yellow{
-//     .smoothies_title;
-// }
 
+// button
 .btn-hover-color (@background-color) {
         background-color: @background-color;
         border: 3px solid $color;
@@ -23,3 +21,41 @@
         border: none;
     }
 }
+
+// li
+
+.item-mixin(@text-decoration, @text-shadow) {
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: @text-decoration;
+        font: @baseFontSize*2, "Trebuchet MS", "Lucida Sans";
+        text-shadow: @text-shadow;
+        color: blueviolet;
+    }
+    // &:focus {
+    //     background-color: @background-color;
+    // }
+    // &:active {
+    //     background-color: @background-color;
+    // }
+}
+
+.item-mixin-hover(@background-color) {
+    &:hover {
+        background-color: @background-color;
+    }
+}
+
+.item-mixin-focus(@background-color) {
+    &:focus {
+        background-color: @background-color;
+    }
+}
+
+.item-mixin-active(@background-color) {
+    &:active {
+        background-color: @background-color;
+    }
+}
+    
