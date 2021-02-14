@@ -158,21 +158,6 @@
     }
 }
 
-/* ------МЕДИАЗАПРОС ДЛЯ ПК ДО 1400px------ */
-/* @media screen and (max-width: 1400px) {
-    .footer__logo {
-        margin: 0 100px;
-    }
-    .footer__right-box {
-        padding: 40px 0;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .footer__information,
-    .footer__pay-system {
-        margin: 0 0 40px 0;
-    }
-} */
 
 /* ------МЕДИАЗАПРОС ДЛЯ СРЕДНИХ ПК ДО 1200px------ */
 @media screen and (max-width: 1200px) {}
@@ -333,6 +318,9 @@
 
     .story__btn {
         font-size: 2.5rem;
+        & when(lightness(@primeryBtnBgrColor)>30) {
+            background-color: rgb(209, 85, 105);
+        }
     }
 
     .story__image {

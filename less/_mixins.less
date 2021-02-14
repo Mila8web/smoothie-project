@@ -6,6 +6,20 @@
 
 .btn-hover-color (@background-color) {
         background-color: @background-color;
-        border: 5px solid rgb(245, 152, 46);
-        color: @primeryTextColor;
+        border: 3px solid $color;
+        color: @tertiaryTextColor;
+}
+
+.btn-focus-mixin() {
+    &:focus {
+        background-color: rgb(174, 174, 248);
+        border: none;
+    }
+}
+
+.btn-active-mixin() {
+    &:active {
+        background-color: rgb(174, 245, 223);
+        border: none;
+    }
 }
