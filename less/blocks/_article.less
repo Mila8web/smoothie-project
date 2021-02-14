@@ -3,12 +3,11 @@
 // blog
 .article {
     &__title {
-        font-size: 3.0rem;
-        line-height: 1.3;
         text-align: left;
-        color: #f2612d;
         margin-top: 330px;
         position: relative;
+        .title(@primaryFontFamily, 3.0rem, #f2612d);
+        line-height: 1.3;
 
         &::before {
             position: absolute;
@@ -25,9 +24,9 @@
     }
 
     &__text {
-        line-height: 2;
         text-align: left;
         margin: 40px 0 0 60px;
         max-width: 472px;
+        .text(@secondaryFontFamily, @secondaryTextColor);
     }
 }
