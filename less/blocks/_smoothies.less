@@ -14,15 +14,16 @@
     }
 
     &__title {
-        line-height: 1;
-        color: @secondaryColor;
         text-align: center;
         padding-top: 100px;
+        .title(@primaryFontFamily, @secondaryTitleFontSize, @secondaryColor);
     }
 
     &__text {
-        max-width: 910px;
+        max-width: 915px;
         margin: 56px 0 60px;
+        line-height: 1.67;
+        .text(@secondaryFontFamily, @secondaryTextColor);
     }
 
     &__info-list {
@@ -62,7 +63,6 @@
 
 .smoothies-info__title {
     margin: 20px 30px 20px 30px;
-    font-size: @primaryFontSize;
     text-align: center;
-    color: #f2612d;
+    .title(@primaryFontFamily, @primaryTitleFontSize, #f2612d);
 }

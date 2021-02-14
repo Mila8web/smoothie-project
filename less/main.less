@@ -35,29 +35,19 @@ a {
 }
 
 button {
+    background-color: @primaryColor;
     border-radius: @primaryBorderRadius;
     .btn-text();
     .btn-border(@secondaryColor);
 }
 
 button,
+button:hover,
 button:active,
 button:focus {
 outline: none !important;
 }
 
-/* Для всех одинаковые стили: классам */
-.title {
-    font-family: @primaryFontFamily;
-    font-size: @primaryTitleFontSize;
-    color: @secondaryColor;
-}
-
-.text {
-    font-family: @secondaryFontFamily;
-    font-size: @primaryFontSize;
-    color: @primaryTextColor;
-}
 
 
 /* ------blocks------ */

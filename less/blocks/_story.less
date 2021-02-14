@@ -20,17 +20,20 @@
 
     &__card {
         padding-bottom: 290px;
-        width: 520px;
+        width: 514px;
     }
 
     &__title--yellow {
         color: @secondaryColor;
         margin: 266px 0px 42px 0px;
+        .title(@primaryFontFamily, @secondaryTitleFontSize, @secondaryColor);
     }
 
     &__text {
         text-align: left;
         margin-bottom: 60px;
+        line-height: 1.94;
+        .text(@secondaryFontFamily, @secondaryTextColor);
     }
 
     &__btn {
