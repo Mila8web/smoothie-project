@@ -353,7 +353,29 @@
             <small class="footer__copyright">&copy;2020.All Rights Reserved.</small>
             <div class="footer__basement-right">
                 <span class="footer__btn-go-up">Go up</span>
-                <div><button class="footer__btn-to-top"></button></div>
+                <div>
+                    <button class="footer__btn-to-top" onclick="topFunction()" id="myBtn" title="Перейти к началу"></button>
+                </div>
+                <script>
+                    // Получить кнопку:
+                    mybutton = document.getElementById("myBtn");
+                    // Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
+                    window.onscroll = function () {
+                        scrollFunction()
+                    };
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+                    // Когда пользователь нажимает на кнопку, прокрутите до верхней части документа
+                    function topFunction() {
+                        document.body.scrollTop = 0; // Для Safari
+                        document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+                    }
+                </script>
             </div>
         </div>
     </footer>
