@@ -2,25 +2,28 @@
 
 // ANIMATIONS
 // menu header
-.header {
-  overflow: hidden;
-}
-
-.header__menu:hover .menu__list {
-  animation: menuLeft 2s;
-}
-
-@keyframes menuLeft {
-  from {
-      transform: translate(-150px, 0px);
+@media screen and (max-width: 1500px) {
+  .header {
+    overflow: hidden;
+  }
+  
+  .header__menu:hover .menu__list {
+    animation: menuLeft 2s;
+  }
+  
+  @keyframes menuLeft {
+    from {
+        transform: translate(-150px, 0px);
+    }
   }
 }
+
 
 // header social icons
 .btn--text-bold {
 	-webkit-animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-          animation-iteration-count: infinite;
+	animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation-iteration-count: infinite;
 }
 
  @-webkit-keyframes tracking-in-expand-fwd {

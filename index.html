@@ -17,7 +17,7 @@
 <body>
     <!-- Здесь будет структура документа (HTML) -->
     <!--  ----------HEADER----------  -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="header__top">
             <div class="header__navigation">
                 <nav class=" menu header__menu">
@@ -30,26 +30,26 @@
 
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="javascript:void(0);">Home</a>
+                                <a class="menu__link" href="#home">Home</a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#shop">Shop</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="javascript:void(0);">Store</a>
+                                <a class="menu__link" href="#story">Story</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="javascript:void(0);">About</a>
+                                <a class="menu__link" href="#about">About</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="javascript:void(0);">Blog</a>
+                                <a class="menu__link" href="#blog">Blog</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="javascript:void(0);">Testimonials</a>
+                                <a class="menu__link" href="#testimonials">Testimonials</a>
                             </li>
                         </ul>
                     </div>
-                    
+
                 </nav>
                 <div class="header__right-wrapper">
                     <div class="personal header__personal">
@@ -121,35 +121,43 @@
         <div class="smoothies__info">
             <ul class="smoothies__info-list">
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-1.png" alt="Plant based" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-1.png" alt="Plant based"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Plant based</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-2.png" alt="Vegan" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-2.png" alt="Vegan"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Vegan</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-3.png" alt="Paleo" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-3.png" alt="Paleo"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Paleo</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-4.png" alt="Gluten-free" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-4.png" alt="Gluten-free"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Gluten-free</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-5.png" alt="Com-Free" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-5.png" alt="Com-Free"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Com-Free</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-6.png" alt="Soy-free" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-6.png" alt="Soy-free"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Soy-free</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-7.png" alt="Ayurvedic" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-7.png" alt="Ayurvedic"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Ayurvedic</h3>
                 </li>
                 <li class="smoothies__list-item">
-                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-8.png" alt="Made with love" data-wow-delay="0.5s">
+                    <img class="smoothies__img wow flipOutY" src="images/2smoothies/Icon-8.png" alt="Made with love"
+                        data-wow-delay="0.5s">
                     <h3 class="title smoothies-info__title">Made with love</h3>
                 </li>
             </ul>
@@ -157,9 +165,10 @@
     </section>
 
     <!--  ----------ABOUT----------  -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__box-image">
-            <img class="about__img" src="images/3about/Summer.png" alt="Welcom summer" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            <img class="about__img" src="images/3about/Summer.png" alt="Welcom summer" data-tilt data-tilt-glare
+                data-tilt-max-glare="0.8">
         </div>
         <div class="about__box-list">
             <h2 class="title title--white">What makes Smoothie an
@@ -197,25 +206,29 @@
     <!--  ----------PRODUCTS----------  -->
     <section class="products" id="shop">
         <div class="products__item products__item--bg-brown">
-            <img class="products__img" src="images/4products/1-Chokolate.png" alt="Chocolate" data-tilt data-tilt-scale="1.1">
+            <img class="products__img" src="images/4products/1-Chokolate.png" alt="Chocolate" data-tilt
+                data-tilt-scale="1.1">
             <h3 class="title products__title">Dark Chocolate Smoothie</h3>
             <span class="products__capacity">100ml</span>
             <button class="btn products__btn-white wow pulse">Buy</button>
         </div>
         <div class="products__item products__item--bg-green">
-            <img class="img products__img" src="images/4products/2-Lettuce.png" alt="Lettuce" data-tilt data-tilt-scale="1.1">
+            <img class="img products__img" src="images/4products/2-Lettuce.png" alt="Lettuce" data-tilt
+                data-tilt-scale="1.1">
             <h3 class="title products__title">Vegan Lettuce Smoothie</h3>
             <span class="products__capacity">100ml</span>
             <button class="btn products__btn-white wow pulse">Buy</button>
         </div>
         <div class="products__item products__item--bg-yellow">
-            <img class="img products__img" src="images/4products/3-Ginger.png" alt="Ginger" data-tilt data-tilt-scale="1.1">
+            <img class="img products__img" src="images/4products/3-Ginger.png" alt="Ginger" data-tilt
+                data-tilt-scale="1.1">
             <h3 class="title products__title">Lemon Ginger Smoothie</h3>
             <span class="products__capacity">100ml</span>
             <button class="btn products__btn-white wow pulse">Buy</button>
         </div>
         <div class="products__item products__item--bg-red">
-            <img class="img products__img" src="images/4products/4-Garlik.png" alt="Garlic" data-tilt data-tilt-scale="1.1">
+            <img class="img products__img" src="images/4products/4-Garlik.png" alt="Garlic" data-tilt
+                data-tilt-scale="1.1">
             <h3 class="title products__title">Turmeric Garlic Smoothie</h3>
             <span class="products__capacity">100ml</span>
             <button class="btn products__btn-white wow pulse">Buy</button>
@@ -223,15 +236,14 @@
     </section>
 
     <!--  ----------STORY----------  -->
-    <section class="story">
+    <section class="story" id="story">
         <div class="story__card">
             <h2 class="title story__title--yellow">Our story</h2>
             <p class="text story__text">As products typically using raw fruits or vegetables,
                 smoothies include dietary fiber (e.g. pulp, skin, and seeds)
                 and so are thicker than fruit juice, often with a consistency
                 similar to a milkshake.</p>
-            <button class="wow bounceInLeft btn story__btn"
-                            data-wow-delay="0.5s">Who we are</button>
+            <button class="wow bounceInLeft btn story__btn" data-wow-delay="0.5s">Who we are</button>
         </div>
         <div class="story__image">
             <img class="story__img" src="images/5story/Img-Story.png" alt="Smoothie-picture">
@@ -239,7 +251,7 @@
     </section>
 
     <!--  ----------TESTIMONIALS----------  -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="testimonials__wrapper">
             <h2 class="title testimonials__title">Why clients
                 <span class="title--red"> LOVE</span> us?
@@ -255,16 +267,19 @@
             </div>
         </div>
         <div class="testimonials__buttons">
-            <a class="testimonials__btn-link-arrow wow pulse" href="javascript:void(0);" data-wow-iteration=infinite></a>
-            <a class="testimonials__btn-link-arrow wow pulse" href="javascript:void(0);" data-wow-iteration=infinite></a>
+            <a class="testimonials__btn-link-arrow wow pulse" href="javascript:void(0);"
+                data-wow-iteration=infinite></a>
+            <a class="testimonials__btn-link-arrow wow pulse" href="javascript:void(0);"
+                data-wow-iteration=infinite></a>
         </div>
     </section>
 
     <!--  ----------BLOG----------  -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <div>
             <h2 class="title blog__title">Our blog</h2>
-            <img class="blog__img" src="images/7blog/Bots.png" alt="pots" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            <img class="blog__img" src="images/7blog/Bots.png" alt="pots" data-tilt data-tilt-glare
+                data-tilt-max-glare="0.8">
         </div>
         <article class="article  blog__article">
             <h2 class="title article__title">ASAFOETIDA - THE NEXT TURMERIC?</h2>
@@ -314,10 +329,14 @@
                 <div class="footer__information">
                     <h3 class="title footer__title">Information</h3>
                     <ul class="footer__info-list">
-                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Search</a></li>
-                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Contact us</a></li>
-                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Terms & Conditions</a></li>
-                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Privacy Policy</a></li>
+                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Search</a>
+                        </li>
+                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Contact
+                                us</a></li>
+                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Terms &
+                                Conditions</a></li>
+                        <li class="footer__list-item"><a class="footer__item-link" href="javascript:void(0);">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer__pay-system">
@@ -336,9 +355,8 @@
                 </div>
                 <div class="footer__email">
                     <h3 class="title footer__title">Don't miss out!</h3>
-                    <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter" 
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="bottom-bottom">
+                    <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter"
+                        data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class="footer__social-box">
                         <a class="footer__btn">FOLLOW US</a>
                         <div class="footer__social-links">
@@ -359,43 +377,30 @@
             <div class="footer__basement-right">
                 <span class="footer__btn-go-up">Go up</span>
                 <div>
-                    <button class="footer__btn-to-top" onclick="topFunction()" id="myBtn" title="Перейти к началу"></button>
+                    <button class="footer__btn-to-top" onclick="topFunction()" id="myBtn"
+                        title="Перейти к началу"></button>
                 </div>
-                <script>
-                    // Получить кнопку:
-                    mybutton = document.getElementById("myBtn");
-                    // Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
-                    window.onscroll = function () {
-                        scrollFunction()
-                    };
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
-                    }
-                    // Когда пользователь нажимает на кнопку, прокрутите до верхней части документа
-                    function topFunction() {
-                        document.body.scrollTop = 0; // Для Safari
-                        document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
-                    }
-                </script>
             </div>
         </div>
     </footer>
-                <script type="text/javascript" src="./libraries/WOW-master/dist/wow.min.js"></script>
-                <script>
-                    new WOW().init();
-                </script>
 
-                <script type="text/javascript" src="./libraries/vanilla-tilt.js-master/dist/vanilla-tilt.min.js"></script>
+    <!-- библиотечка WOW -->
+    <script type="text/javascript" src="./libraries/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <script>
-                    AOS.init();
-                </script>
-                <script src="./less/main.js"></script>
+    <!-- библиотечка VANILLA-TILT -->
+    <script type="text/javascript" src="./libraries/vanilla-tilt.js-master/dist/vanilla-tilt.min.js"></script>
+
+    <!-- библиотечка AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
