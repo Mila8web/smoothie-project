@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./assets/fonts.css">
     <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -335,7 +336,9 @@
                 </div>
                 <div class="footer__email">
                     <h3 class="title footer__title">Don't miss out!</h3>
-                    <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter">
+                    <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter" 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                     <div class="footer__social-box">
                         <a class="footer__btn">FOLLOW US</a>
                         <div class="footer__social-links">
@@ -387,6 +390,11 @@
                 </script>
 
                 <script type="text/javascript" src="./libraries/vanilla-tilt.js-master/dist/vanilla-tilt.min.js"></script>
+
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
 </body>
 
 </html>
