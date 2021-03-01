@@ -22,7 +22,7 @@ document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
 
 
 
-// Плавная прокрутка
+// Плавная прокрутка Lesson 08
 let anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -34,4 +34,21 @@ for (let anchor of anchors) {
             block: 'start'
         })
     })
+}
+
+// -----------------QuerySelector Lesson 07
+// <!-- при нажатии на кнопку buy будем увеличивать число элементов в корзине (header and products) -->
+
+let buy_buttons = document.querySelectorAll('.products__btn-white')
+let cart_count = document.getElementById('cart_count')
+
+function addToCart() {
+    cart_count.innerText = Number(cart_count.innerText)+1 //Number: строку переводим в номер 
+}
+
+// buy_buttons[0].addEventListener
+// buy_buttons[1].addEventListener //и т.д. всем кнопкам
+
+for(let i=0; i < buy_buttons.length; i++) {
+    buy_buttons[i].addEventListener('click', addToCart)
 }
