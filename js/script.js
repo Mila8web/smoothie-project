@@ -1,5 +1,5 @@
 
-// Для кнопки GoTop
+// ---------------------Для кнопки GoTop
 // Получить кнопку:
 mybutton = document.getElementById("myBtn");
 // Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
@@ -22,7 +22,7 @@ document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
 
 
 
-// Плавная прокрутка Lesson 08
+// -----------------------Плавная прокрутка Lesson 08
 let anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -36,7 +36,7 @@ for (let anchor of anchors) {
     })
 }
 
-// -----------------QuerySelector Lesson 07
+// ------------------------QuerySelector Lesson 07
 // <!-- при нажатии на кнопку buy будем увеличивать число элементов в корзине (header and products) -->
 
 let buy_buttons = document.querySelectorAll('.products__btn-white')
