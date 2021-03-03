@@ -52,3 +52,12 @@ function addToCart() {
 for(let i=0; i < buy_buttons.length; i++) {
     buy_buttons[i].addEventListener('click', addToCart)
 }
+
+// -------------------------Слайдер для instagram
+$(".variable").slick({
+    dots: true,
+    infinite: true,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });

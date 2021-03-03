@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./assets/fonts.css">
     <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/>
 
     <title>Document</title>
 </head>
@@ -298,8 +303,8 @@
     <!--  ----------INSTAGRAM----------  -->
     <section class="instagram">
         <a class="instagram__social-link" href="javascript:void(0);" id="social">ashasuperfoods</a>
-        <div class="slider">
-            <div class="instagram__gallery">
+
+            <div class="variable slider instagram__gallery">
                 <div class="instagram__img-wrap">
                     <img class="instagram__img" src="images/8instagram/Foto1.png" alt="berries">
                 </div>
@@ -316,10 +321,6 @@
                     <img class="instagram__img" src="images/8instagram/Foto5.png" alt="milk">
                 </div>
             </div>
-            <div class="sim-slider-arrow-left"></div>
-            <div class="sim-slider-arrow-right"></div>
-            <div class="sim-slider-dots"></div>
-        </div>
         
     </section>
 
@@ -404,6 +405,12 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- /*подключаем JQuery
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>*/ -->
+    <!-- подключаем слайдер Slick -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="libraries/slick/slick.js"></script>
 
     <!-- подключаем файлы из папки js-->
     <script src="./js/burgerMenu.js"></script>
